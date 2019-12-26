@@ -3,10 +3,6 @@ import sys
 import time
 import textwrap
 
-"""
-TODO
--De o1 afhandeling van de modifiers goed krijgen (met index?)
-"""
 def sanitize(string):
     san = string.strip()
     sanit = san.replace("\n", "") 
@@ -72,37 +68,31 @@ class Greek_Game:
         loop = True
         i = 0
         while i < no_cards:
-            print(i)
             card = self.cards[i]
             if loop:
                 self.print_text(card.text, card.options)
             loop = True
             if len(card.options) > 0:
-                ip = input("Your choice: ")
-                #ip = "1"
+                ip = input("\nYour choice: ")
                 
                 if ip is "1":
-                    changes = card.changes1
-                    i = i + card.modifier1
-                    print(card.modifier1)
-                    print(i)
+                    changes = card.changes[0]
+                    i = i + card.modifier[0]
                 elif ip is "2":
-                    changes = card.changes2
-                    i = i + card.modifier2
-                    print(card.modifier2)
-                    print(i)
+                    changes = card.changes[1]
+                    i = i + card.modifier[1]
                 else: 
                     print("That wasn't a choice.")
                     loop = False
                     continue
-                print(changes)
+
                 print("------------------")
                 
                 for change in changes:
                     self.change_variables(int(change[0]), change[1])
             else:
                 print("------------------")
-                i = i + card.modifier1
+                i = i + card.modifier[0]
                 wait = input()
                                  
     
@@ -111,52 +101,43 @@ class Greek_Game:
         file = open(argument)
         
         cur = Card()
-        o1 = True
+        o = -1
         for line in file:
             cur_line = line.split(' ')
             action = sanitize(cur_line[0])
             if action is "&":
                 #print("I made a new card") 
+                cur.no_ops = o + 1
                 self.cards.append(cur)
                 cur = Card()
-                o1 = True
+                o = -1
             elif action is "*":
-                print("I came upon an option") 
-                print(o1)
+                #print("I came upon an option") 
                 txt = line.replace("* ", "")
                 txt = sanitize(txt)
                 cur.options.append(txt)
-                o1 = not o1
+                cur.changes.append([])
+                o += 1
             elif action is "/":
-                print("I found a string") 
+                #print("I found a string") 
                 i = sanitize(cur_line[1])
                 index = int(i)               
                 txt = line.replace("/ {}".format(i), "")
                 txt = sanitize(txt)
-                if o1:
-                    print(txt)
-                    cur.changes1.append((index, txt))
-                else:
-                    cur.changes2.append((index, txt))
+                cur.changes[o].append((index, txt))
             elif action is "!":
-                print("I found an int") 
+                #print("I found an int") 
                 i = sanitize(cur_line[1])
                 i = int(i)               
                 txt = cur_line[2].replace("! ", "")
                 number = sanitize(txt)
                 number = int(number)
-                if o1:
-                    cur.changes1.append((i, number))
-                else:
-                    cur.changes2.append((i, number))
+                cur.changes[o].append((i, number))
             elif cur_line[0] is "+":
-                print("I changed the index")
+                #print("I changed the index")
                 i = sanitize(cur_line[1])
                 i = int(i)
-                if not o1:
-                    cur.modifier2 = i
-                else:
-                    cur.modifier1 = i
+                cur.modifier.append(i)
             else:
                 #print("I added some text") 
                 sentence = sanitize(line)

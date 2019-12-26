@@ -85,14 +85,12 @@ class Goal:
     
 class Card(): 
     def __init__(self):
+        self.no_ops = 0
         self.text = []
         self.options = []
-        self.changes1 = []
-        self.conditions1 = []
-        self.modifier1 = 0
-        self.changes2= []
-        self.condition2 = []
-        self.modifier2 = 0
+        self.changes = []
+        self.conditions = []
+        self.modifier = []
                  
 ## PROCESSES ##
 
