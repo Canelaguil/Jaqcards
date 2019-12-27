@@ -47,7 +47,10 @@ class Greek_Game:
             else: 
                 whole = whole + line + " "
         
-        print(whole)
+        whole = textwrap.wrap(whole)
+        for line in whole:
+            print(line)
+            
         if len(options) > 0:
             print("--Option 1:") 
             print(options[0])
@@ -62,7 +65,7 @@ class Greek_Game:
             sys.exit()
 
         print("Are you ready to start your adventure?") 
-        wait = input("Press any key to continue.\n") 
+        wait = input("Press 'enter' to continue.\n") 
         print("------------------")
         
         loop = True
@@ -91,9 +94,9 @@ class Greek_Game:
                 for change in changes:
                     self.change_variables(int(change[0]), change[1])
             else:
-                print("------------------")
                 i = i + card.modifier[0]
                 wait = input()
+                print("------------------")
                                  
     
     def read_cards(self):

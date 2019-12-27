@@ -91,6 +91,13 @@ class Card():
         self.changes = []
         self.conditions = []
         self.modifier = []
+        
+class Switch():
+    def __init__(self):
+        # If this condition is true...
+        self.condition = []
+        # Go to index below
+        self.index = []
                  
 ## PROCESSES ##
 
