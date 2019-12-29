@@ -12,14 +12,18 @@ class Character:
         self.surname = char_surname
         self.description = ""
         self.job = None
+        self.state =  "alive"
         self.home_location = home
         self.location = loc
+        self.diguise = None
         # {person: goodwill}
         self.people = {}
         # 0=not available, 1=hetero, 2=bi
         self.sexual_orientation = sex_or
         # 0=not specified, 1=female, 2=male
         self.gender = gender
+        # {"keyword": Goal}
+        self.goals = {}
         
 class Playable_Character(Character):
     def __init__(self, char_name, char_surname, gender, home = None, loc = None, sex_or = 0):
@@ -27,8 +31,6 @@ class Playable_Character(Character):
         # Consists of Item()s
         self.inventory = []
         self.marks = 0
-        # {"keyword": Goal}
-        self.goals = {}
         
 class Non_Playable_Character(Character):
     def __init__(self, char_name, char_surname, gender, home = None, loc = None, sex_or = 0, job = None):
@@ -50,12 +52,13 @@ class Location:
         self.description = description
 
 class Store(Location):
-    def __init__(self, workers = [], inventory = []):
+    def __init__(self, title, img = None, description = "", workers = [], inventory = []):
+        super().__init__(title, img, description)
         self.employees = workers
         self.items = inventory
         
 class Item:
-    def __init__(self, name, category, description = "", food = False):
+    def __init__(self, name, category, title, img = None, description = "", food = False):
         self.category = category
         self.food = food
         self.description = description
@@ -85,19 +88,20 @@ class Goal:
     
 class Card(): 
     def __init__(self):
-        self.no_ops = 0
+        self.i = 0
+        self.no_options = 0
         self.text = []
+        self.dialogue = []
         self.options = []
         self.changes = []
-        self.conditions = []
-        self.modifier = []
         
 class Switch():
     def __init__(self):
+        self.i = 0
         # If this condition is true...
         self.condition = []
         # Go to index below
-        self.index = []
+        self.default = 0
                  
 ## PROCESSES ##
 

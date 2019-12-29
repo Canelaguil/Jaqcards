@@ -1,0 +1,21 @@
+Welcome to Sparta. You're preparing for a nice and cosy holiday at home when a messenger appears, telling you the great Senemis is looking for a misthios. That isn't someone you can say no to, so you reluctantly go to his house.
+&
+Senemis is an old man, with a bitter expression on his face. He receives you in the hall of his house. 
+- Senemis: Ah, there you are. You are the misthios they call Eagle Bearer, wasn't it? What is your name?
+* Alexios
+# you name Alexios
+# you gender 2
+! you spartan 10
+* Kassandra
+# you name Kassandra
+# you gender 1
+! you athenian 10
+&
++
+# you gender 1 2 10
+! you spartan 5 1 10
+++ 2
+- Senemis: I'm happy you're a man, because I'm very into men.
+&
+- Senemis: I'm happy you're a woman, because I'm very into women. 
+&

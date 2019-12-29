@@ -1,0 +1,212 @@
+Welcome to Sparta. You've just come home from a few years travelling through Persia, hunting down the last remains of the cult that has threatened you your whole life. 
+&
+Your family welcomes you, and you're just preparing for a nice and cosy holiday at home when a messenger appears, telling you the great Senemis is looking for a misthios. That isn't someone you can say no to, so you reluctantly go to his house.
+&
+Senemis is an old man, with a bitter expression on his face. He receives you in the hall of his house. 
+- Senemis: Ah, there you are. You are the misthios they call Eagle Bearer, wasn't it? What is your name?
+* Alexios
+# you name Alexios
+# you gender 2
+! you spartan 10
+* Kassandra
+# you name Kassandra
+# you gender 1
+! you athenian 10
+&
++
+# you name Kassandra 2 1
+# you name Alexios 1 2
+++ 2
+% This is a comment
+- Senemis: Well, Alexios, I have a job for you. A very high profile job. 
+- You: High profile... in which circles?
+- Senemis: In Greek circles, though he called himself Spartan once. Before he betrayed us all. And now he's trying to win back Athen's favor! He's a snake in the grass, a man who brings war and dispute everywhere he goes, a man who sweettalks everyone into being at his bidding.
+&
+- Senemis: Well, Kassandra, I have a job for you. A very high profile job. Do you think you're up for it?
+- You: High profile... in which circles?
+- Senemis: In Greek circles, though he called himself Spartan once. Before he betrayed us all. And now he's trying to win back Athen's favor! He's a snake in the grass, a man who brings war and dispute everywhere he goes, a man who sweettalks everyone into being at his bidding.
+&
+That sounds suspiciously like a member of the cult you thought you destroyed.
+- Senemis: Do you think you're up for it?
+* An enemy of Sparta is my enemy.
+! you spartan 30
+* A job is a job.
+* Yes. I think I know the kind...
+&
+- Senemis: Of course. 
+- You: What can you tell me about him?
+- He is currently on Samos, trying to get in touch with the Athenian leadership there. Goes by the name of Deitomachos.
+- You: How do I find him?
+&
+- Senemis: We have a guy there, Cleinias. An Athenian. Find him in the temple of Apollo, he will guide you in the right direction.
+* Spartans and Athenians working together... A lot must have changed since I left Greece.
+* I trust travel expenses are covered and a large fee will be waiting for me when I'm back? 
+* Alright. See you in a week.
+&
+Senemis smiles.
+- Senemis: Save travels.
+&
+You take the first ship to Samos and arrive there a day later. Samos is currently being held by Athenians. Do you try to blend it or do you dress as a Spartan?
+* Blend in
+# you disguise athenian
+* Proudly wear your Spartan colors
+! you spartan 30
+! you athenian -20
+# you disguise spartan
+&
++
+# you disguise athenian 1 6
+# you disguise spartan 2 1
+++ 3
+You go up to some people in the harbor to ask for the way. They direct you to the temple, near the mountain in the distance. 
+&
+You go up to some people in the harbor to ask for the way. They shun you.
+* Threaten them
+ju 1
+* Try to find the temple by yourself
+ju 2
+* Change clothes
+# you disguise athenian
+ju 5
+% not finished
+&
+That did not go over well... As the athenian guards arrive you barely manage to get away. They'll be looking for someone dressed like you, so you have no other choice but to change your clothes to blend in. 
+* Change clothes
+# you disguise athenian
+ju 4
+&
+You slowly try to find your way to the temple, warrily watching your back as people stare at you. In the end you have no other choice but to pay a beggar to show you. 
+* Pay. (- money) 
+# you marks -2
+ju 1
+&
+When you finally find Cleinias he laughs.
+- Well, I guess I should have known Spartans are stupid enough to come to enemy territory dressed like... this. Come back when I won't look like a traitor talking to you.
+* Fuck off.
+ju 1
+&
+But... You have no other choice. 
+* Change clothes
+# you disguise athenian
+ju 1
+% AT TEMPLE (CONVERGENCE)
+&
+When you finally arrive at the temple, dressed as an Athenian, you find Cleinias standing in the courtyard. Cleinias laughs when he sees you.
+- Cleinias: I see you changed your clothes... Good. Though I know the look of a Spartan when I see one!
+* Tell me what I need to know.
+* Let's cut the smalltalk.
+* I'll take that as a compliment.
+! you spartan 10
+&
+- Cleinias: I'll keep it brief.
+- You: Thank you.
+- Cleinias: Did they tell you who this job concerns?
+- You: Yes, Deitomachos.
+- Cleinias: Deitomachos? Alright...
+* - You: Something wrong?
+* - You: Where can I find him?
+ju 2
+&
+- Cleinias: No, not at all. If that's the name they gave you that's what we'll work with. 
+- You: So it isn't his real name. 
+- Cleinias: No.
+- You: And you won't give me his real name.
+- Cleinias: No.
+- You: Alright. I'll find out anyways. Where did you say I could find him?
+&
+- Cleinias: My spies have been keeping an eye on him these past weeks. He always takes a morning walk on the Agora, talking to various Athenians. You can recognize him by his purple robe.
+- You: There aren't many people who can afford a purple robe.
+- Cleinias: Indeed. Try to find him tomorrow and otherwise come find me here again. He needs to be dead by Friday.
+* - You: Alright.
+ju 2
+* - You: What happens on Friday?
+&
+- Cleinias: ... Friday is the meeting of the democratic assembly, of course. Where have you been, that you know so little of current affairs?
+- You: None of your business. But it won't be hard to find out who should have had an important speech at the assembly this Friday.
+- Cleinias: I guess that's true...
+- You: I'll be on my way now.
+&
+You find a place to sleep in an inn and head to the Agora first thing the next morning. There's a small, roofed in altar surrounded by trees at the edge of the agora. You climb on top, hidden by the shadows, and wait. When he comes at least you spot the purple robe and silver hair from miles away. It's not hard to recognize the person they belong too: it's your old friend Alkybiades.
+&
+A few years ago, before you found your family and your Spartan citizenship was restored, you used to do various jobs around Athens. Perikles was still alive at the time and you greatly respected him. That's also where you met his protegée Alkybiades, who you respected less but still grew to like.
+& 
+He was a brilliant general and rhetorican, overflowing with ideas and plots to reach his not-always-very-moral goals. He was a beautiful youth pining after Socrates and sleeping around with everyone around him in the meantime. You didn't see eye to eye on everything, but you grew very close as friends..
+* Very good friends.
+* Very good friends, and lovers.
+! alky lovers 50
+&
+But much has happened since then. Alkybiades had apparently spend some time in Sparta, which was weird to say the least, and what was he doing on Samos trying to talk to Athenians? What has he done to have people wanting to kill him?
+* It doesn't matter. A job is a job.
+! alky saved -30
+* You give him the benefit of the doubt. He was your friend.
+! alky saved 20
+* He was your friend, you can't just kill him.
+! alky saved 40
+&
+You have to get him to talk to you, but he's walking across the public agora surrounded by guards. What do you do?
+* You jump into some nearby bushes and whistle, hoping he'll come to you.
+ju 1
+* You hide behind the altar and make yourself visible when he comes by.
+ju 3
+* You call out his name and gesture for him to come to the temple.
+ju 3
+&
+The guards look up and slowly move to the bushes. Alkybiades has seen you and must have recognized you, but he doesn't do anything to stop the guards. And so you take them out one by one, trying not to gather too much attention. When you're done you turn to your old friend.
+* - You yell: What the hell was that?
+ju 4
+* Kill Alkybiades
+&
+You've fulfilled your task and go back to Sparta to collect your reward.
+* End game
+xXx
+* Go back in time
+ju -2
+&
+As soon as he sees you Alkybiades cries out to his guards.
+- Alkybiades: Kill that misthios!
+- You: What?!
+* Defend yourself
+&
+You take them out one by one, trying not to gather too much attention. When you're done you turn to your old friend.
+* - You yell: What the hell was that?
+* Kill Alkybiades
+ju -2
+% Convergence
+&
++
+# you name Kassandra 1 2
+# you name Alexios 2 1
+++ 2
+Alkybiades smiles, not frightened at all.
+- Alkybiades: It's good to see you Kassandra. 
+&
+Alkybiades smiles, not frightened at all.
+- Alkybiades: It's good to see you Alexios. 
+&
+- You: It's certainly not good to see you. Why didn't you stop them?!
+- Alkybiades: I'm sorry, truly. But statistically I think I made the right choice.
+- You: "Statistically" you thought you'd try to kill me?
+- Alkybiades: Yes. You're a misthios who's fought on a lot of sides of this war. I haven't seen you in ages. Either you're here to kill me, in which case I had to take my chance with those guards, or you weren't. 
+- You: In which case I just murdered a lot of people. 
+&
+
+
+
+
+
+
+
+
+- Alkybiades: Yes. And I'd been looking for a way to get rid of them, so thanks. 
+- You: Why?
+- Alkybiades: They'd been paid to betray me. And I knew they couldn't possibly have hurt you, so really! It was the safest choice. And I'm glad you're alive! This must suuuurely mean you had no intention of hurting me.
+* Don't say anything.
+* - You: Actually...
+* - You: Yes, of course not. I'm as surprised as you are to see you here. A bit more, maybe, seeing how you tried to kill me.
+&
+
+
+
+
+
+
