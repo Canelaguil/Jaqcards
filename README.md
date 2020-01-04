@@ -7,14 +7,14 @@ you can already play the first chapter of.
 
 ## For Players
 ### If you have python3 installed on your computer:
-Just clone or download this repository and run the Alybiades game with this command:
+Just clone or download this repository and run the Alkybiades game with this command:
 ```
 python3 init_game.py SnakeInTheGrass
 ```
 This will initialize all the right files listed in the SnakeInTheGrass file.
 ### If you don't have python3 installed on your computer:
 I'm working on creating a neat executable to download. Till then, stay tuned...
-## For story writers
+## For Story Writers
 Check out the help.input file in the input folder! This file also appears when you run init_game.py with 'help' as argument.
 Here follows a quick recap of the basic concepts you need to understand:
 ### Jumping around cards
@@ -42,6 +42,6 @@ Goals belong to a character and charactes need to be defined. You therefore need
 
 You can read more on all of this in the help.input file in the input folder! Be sure to check out the existing story as well.
 
-## For developers
+## For Developers
 I mean, if you're here you probably have some idea of what you want to do with this so... Just do it. The code is quite
 self explanetory.
