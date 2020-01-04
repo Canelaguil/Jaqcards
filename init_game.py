@@ -3,7 +3,7 @@ Date:           02/01/2020
 Made by:        Clara Martens Avila
 Description:    An intepreter that gets certain kinds of files as
                 input and runs them as a CLI-based Choose Your Own
-                Adventure Game. 
+                Adventure Game.
 
 """
 
@@ -13,13 +13,10 @@ import signal
 import os.path
 import textwrap
 
-# TODO
-# - Change standard step unit
-# - implement change of self...
 
 def sanitize(string):
     san = string.strip()
-    sanit = san.replace("\n", "") 
+    sanit = san.replace("\n", "")
     return sanit
 
 
@@ -31,15 +28,15 @@ class New_Game:
         self.hop_size = 0
         self.chapter_files = []
         self.no_chapters = 1
-        
+
         # Extra inits
         signal.signal(signal.SIGINT, self.signal_handler)
-        
+
         # Initialization of characters and cards
         f1, f2 = self.check_files()
         self.init_characters(f1)
         self.init_goals(f2)
-        
+
         # Start game
         for chapter in self.chapter_files:
             self.i = 0
@@ -49,19 +46,18 @@ class New_Game:
             self.init_cards(chapter)
             print("Press enter to continue.")
             self.play_game()
-        
-        
+
     def signal_handler(self, sig, frame):
         print("\nExiting the game. No progress saved.")
         sys.exit()
-        
+
     def check_files(self):
         """
         Checks if all files are given as arguments, and are indeed
         files.
         """
         files = []
-        
+
         if sys.argv[1] == 'help':
             file = open('input/help.input')
             for line in file:
@@ -86,23 +82,26 @@ class New_Game:
                             f_line = False
                         else:
                             files.append(fi)
-            else:    
-                print("This game requires 3 files as arguments OR a file containing these three:") 
+            else:
+                print(
+                    "This game requires 3 files as arguments OR a file containing these three:")
                 print("-A character file")
-                print("-A goal file") 
+                print("-A goal file")
                 print("-A card file")
-                print("If you're not sure about the input format, run 'python3 init_game help'.")
+                print(
+                    "If you're not sure about the input format, run 'python3 init_game help'.")
                 sys.exit()
         else:
             files.append(sys.argv[1])
             files.append(sys.argv[2])
             files.append(sys.argv[3])
-            
+
         for file in files:
             if not os.path.isfile(file):
-                print("{} was not recognized as file. Please try again with a correct filepath.".format(file))
+                print(
+                    "{} was not recognized as file. Please try again with a correct filepath.".format(file))
                 sys.exit()
-                
+
         print("Hold on while we load your game...")
         characters = files[0]
         goals = files[1]
@@ -110,7 +109,6 @@ class New_Game:
         print("... found {} chapters...".format(len(self.chapter_files)))
         return characters, goals
 
-        
     def init_characters(self, file_name):
         """
         Initializes all characters from the character file.
@@ -129,14 +127,14 @@ class New_Game:
             else:
                 item = sanitize(line[0])
                 attributes.append(item)
-                
+
         if len(self.characters) == 0:
-            print("Something went wrong. Please check your character file before trying again.")
+            print(
+                "Something went wrong. Please check your character file before trying again.")
             sys.exit()
-                
+
         print("... succesfully loaded {} characters...".format(len(self.characters)))
-    
-    
+
     def init_goals(self, file_name):
         """
         Initializes all goals from the goal file.
@@ -146,7 +144,7 @@ class New_Game:
         g_key = ""
         goals = {}
         goal_atr = []
-        
+
         file = open(file_name)
         for line in file:
             if line[0] == '&':
@@ -164,14 +162,14 @@ class New_Game:
             else:
                 atr = sanitize(line)
                 goal_atr.append(atr)
-                
+
         if no_goals == 0:
-            print("Something went wrong. Please check your goal file before trying again.")
+            print(
+                "Something went wrong. Please check your goal file before trying again.")
             sys.exit()
-                
+
         print("... succesfully loaded {} goals...".format(no_goals))
-    
-    
+
     def init_cards(self, file_name):
         """
         Initializes all cards from the card file.
@@ -185,14 +183,14 @@ class New_Game:
         for line in file:
             cur_line = line.split(' ')
             action = sanitize(cur_line[0])
-            if action == '&': 
+            if action == '&':
                 cur.no_options = o + 1
                 count += 1
                 cur.i = count
                 self.cards.append(cur)
                 cur = Card()
                 o = -1
-            elif action == '+': 
+            elif action == '+':
                 switch = True
             elif action == '++':
                 cur_switch.default = cur_line[1]
@@ -210,29 +208,29 @@ class New_Game:
                 cur.dialogue.append(txt)
             elif action == '%':
                 pass
-            elif action == 'ju' or action == 'xXx' or action ==  'XXX':
+            elif action == 'ju' or action == 'xXx' or action == 'XXX':
                 do_thing = sanitize(line)
                 cur.changes[o].append(do_thing)
             elif action == '!' or action == '#':
                 if switch:
                     con = sanitize(line)
-                    cur_switch.condition.append(con) 
+                    cur_switch.condition.append(con)
                 else:
                     # ! you spartan 10
                     chan = sanitize(line)
                     cur.changes[o].append(chan)
-            else: 
+            else:
                 sentence = sanitize(line)
                 cur.text.append(sentence)
-           
-        self.no_cards = len(self.cards)        
+
+        self.no_cards = len(self.cards)
         if self.no_cards == 0:
-            print("Something went wrong. Please check your card file before trying again.")
+            print(
+                "Something went wrong. Please check your card file before trying again.")
             sys.exit()
-                
+
         print("... succesfully loaded {} cards for this chapter...".format(self.no_cards))
-        
-        
+
     def ask_input(self, options):
         """
         Generates a loop till the user gives correct input.
@@ -241,7 +239,7 @@ class New_Game:
             ip = ""
             try:
                 ip = input("\n-Your choice: ")
-            except EOFError: 
+            except EOFError:
                 pass
             try:
                 ip = int(ip)
@@ -252,14 +250,13 @@ class New_Game:
                 print("")
                 return ip
             print("That input wasn't valid.")
-             
-                
+
     def check_commands(self):
         """
         Checks for user commands.
         """
         u = ""
-        try: 
+        try:
             u = input("")
         except EOFError:
             pass
@@ -277,18 +274,17 @@ class New_Game:
                 self.hop_size = -1
         elif u_in == "wherami":
             print(self.i)
-                
+
         if 'goto' in u_in:
             command = u_in.split(' ')
             self.i = int(command[1])
-                
-        
+
     def print_card(self, card):
         """
         Prints all the text associated to the card.
         """
         print("-" * 70)
-        
+
         # If title card
         if card.text != []:
             if card.text[0][0] == '[':
@@ -300,27 +296,27 @@ class New_Game:
                     print(space + text)
                 print('\n')
                 return
-        
+
         # Print normal text
         whole = ""
         for line in card.text:
             whole += line + " "
-                
+
         arr = textwrap.wrap(whole)
-        
+
         for line in arr:
             print(line)
-        
+
         # Print dialogue
         for line in card.dialogue:
             line = textwrap.wrap(line)
             for sen in line:
                 print(sen)
-        
+
         # Print options
         if card.no_options > 0:
             print("")
-            
+
         i = 1
         for option in card.options:
             print("++ {}:".format(i))
@@ -328,8 +324,7 @@ class New_Game:
             for line in op:
                 print(line)
             i += 1
-    
-    
+
     def change_vars(self, changes):
         """
         Changes variables depending on the choice of the user.
@@ -353,82 +348,68 @@ class New_Game:
                 self.hop_size = int(c[1])
             elif first_c == 'xXx':
                 print("You've reached the end of the chapter.")
-                print("You've seen {} out of {} cards.".format(self.seen, len(self.cards)))
+                print("You've seen {} out of {} cards.".format(
+                    self.seen, len(self.cards)))
                 self.i += 100000
             elif first_c == 'XXX':
                 print("You've reached the end of the game.")
-                print("You've seen {} out of {} cards in this chapter.".format(self.seen, len(self.cards)))
+                print("You've seen {} out of {} cards in this chapter.".format(
+                    self.seen, len(self.cards)))
                 sys.exit()
-            elif first_c == '$':
-                if os.pathfile(
             else:
                 print("One of the changes was not formatted correctly.")
-    
-    
+
+
     def get_switched_index(self, switch):
         """
         Returns new variable based on what condition is true.
         """
         # ! you spartan 5 1 10
         for condition in switch.condition:
-            c = condition.split(" ")
-            first_c = c[0]
+            c=condition.split(" ")
+            first_c=c[0]
             if first_c == '!':
-                obj = self.characters[c[1]]
-                goal_list = getattr(obj, "goals", "error")
-                p = int(goal_list[c[2]].points)
+                obj=self.characters[c[1]]
+                goal_list=getattr(obj, "goals", "error")
+                p=int(goal_list[c[2]].points)
                 if p > int(c[3]):
                     return int(c[4]), int(c[5])
             elif first_c == '#':
-                obj = self.characters[c[1]]
-                atr = c[2]
-                cur_value = getattr(obj, atr, "error")
+                obj=self.characters[c[1]]
+                atr=c[2]
+                cur_value=getattr(obj, atr, "error")
                 if cur_value == c[3]:
                     return int(c[4]), int(c[5])
-                
+
         return int(switch.default), 1
-                
-        
+
+
     def play_game(self):
         """
         Contains the actual game loop, including (sub-)jump_i.
         """
-        
+
         while self.i < self.no_cards:
-            card = self.cards[self.i]
-            
+            card=self.cards[self.i]
+
             if isinstance(card, Card):
                 self.print_card(card)
                 if card.no_options > 0:
-                    user = self.ask_input(card.no_options) - 1
+                    user=self.ask_input(card.no_options) - 1
                     self.change_vars(card.changes[user])
                 else:
                     self.check_commands()
-                    
+
                 if self.hop:
                     self.i += self.hop_size
-                    self.hop = False
+                    self.hop=False
                 else:
                     self.i += 1
             elif isinstance(card, Switch):
-                modifier, self.hop_size = self.get_switched_index(card)
+                modifier, self.hop_size=self.get_switched_index(card)
                 self.i += modifier
-                self.hop = True
-          
+                self.hop=True
+
             self.seen += 1
 
-new_game = New_Game()
-
-
-
-
-
-
-
-
-
-
-
-
-
-        
+new_game=New_Game()

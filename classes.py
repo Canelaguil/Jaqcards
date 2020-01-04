@@ -1,8 +1,8 @@
 """
-Classes for a very rudimentary CLI game. 
+Date:           02/01/2020
+Made by:        Clara Martens Avila
+Description:    Classes, some of which are not yet used, to run a game in Jaqcards.
 
-By: Clara Martens Avila
-Date: 20/12/2019
 """
 
 ## CHARACTER CLASSES ##
@@ -24,21 +24,21 @@ class Character:
         self.gender = gender
         # {"keyword": Goal}
         self.goals = {}
-        
+
 class Playable_Character(Character):
     def __init__(self, char_name, char_surname, gender, home = None, loc = None, sex_or = 0):
         super().__init__(char_name, char_surname, gender, home = None, loc = None, sex_or = 0)
         # Consists of Item()s
         self.inventory = []
         self.marks = 0
-        
+
 class Non_Playable_Character(Character):
     def __init__(self, char_name, char_surname, gender, home = None, loc = None, sex_or = 0, job = None):
         super().__init__(char_name, char_surname, gender, home = None, loc = None, sex_or = 0)
         self.job = job
 
 ## WORLD CLASSES ##
-class Job: 
+class Job:
     def __init__(self, job_title, loc = None, work_hours = [7, 18]):
         self.location = job
         self.job = job_title
@@ -56,16 +56,16 @@ class Store(Location):
         super().__init__(title, img, description)
         self.employees = workers
         self.items = inventory
-        
+
 class Item:
     def __init__(self, name, category, title, img = None, description = "", food = False):
         self.category = category
         self.food = food
         self.description = description
-    
+
 
 ## GAMEPLAY CLASSES ##
-class Goal: 
+class Goal:
     def __init__(self, keyword, title, description, multiplier = 1,
                  points = 0):
         self.key = keyword
@@ -73,20 +73,20 @@ class Goal:
         self.description = description
         self.multiplier = multiplier
         self.points = points
-     
+
     def update_points(self, aggr):
         self.points += aggr * self.multiplier
 
     def set_points(self, p):
         self.points = p
-        
+
     def update_multiplier(self, aggr):
         self.multiplier += aggr
-        
+
     def set_multiplier(self, new_mul):
         self.multiplier = new_mul
-    
-class Card(): 
+
+class Card():
     def __init__(self):
         self.i = 0
         self.no_options = 0
@@ -94,27 +94,20 @@ class Card():
         self.dialogue = []
         self.options = []
         self.changes = []
-        
+
 class Switch():
     def __init__(self):
         self.i = 0
-        # If this condition is true...
         self.condition = []
-        # Go to index below
         self.default = 0
-                 
+
 ## PROCESSES ##
 
-#Update the town inventories on a weekly basis
-class Town_suplies:
-    def __init__(self, food_percentage):
-        pass
-    
-    
-    
-    
-        
-        
-        
-        
-        
+
+
+
+
+
+
+
+
