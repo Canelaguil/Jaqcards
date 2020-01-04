@@ -1,17 +1,6 @@
-[ THE SNAKE IN THE GRASS 
+[ SNAKE IN THE GRASS
 [ Chapter 2
 &
 This chapter is currently in the making! Stay tuned for your conversation with Alkybiades the next day...
 &
-Have you talked to Cleinias? 
-* Yes
-$ SIG2.sub1
-If talked to Cleinias:
-Confront Alkybiades about his influence in Athens
--> conversation about morality
-If not talked to Cleinias:
-Discuss changing sides so many times
--> conversation about morality
-
-Decide again whether to kill Alkybiades or not
 

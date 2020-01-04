@@ -1,11 +1,14 @@
-[ THE SNAKE IN THE GRASS 
-[ Chapter 1 
+This story was written after reading Alkybiades' biography and inspired by Assasins Creed Odyssey. It can however be played/read without
+knowing anything about either.
 &
-Welcome to Sparta. You've just come home from a few years travelling through Persia, hunting down the last remains of the cult that has threatened you your whole life. 
+[ SNAKE IN THE GRASS
+[ Chapter 1
+&
+Welcome to Sparta. You've just come home from a few years travelling through Persia, hunting down the last remains of the cult that has threatened you your whole life.
 &
 Your family welcomes you, and you're just preparing for a nice and cosy holiday at home when a messenger appears, telling you the great Senemis is looking for a misthios. That isn't someone you can say no to, so you reluctantly go to his house.
 &
-Senemis is an old man, with a bitter expression on his face. He receives you in the hall of his house. 
+Senemis is an old man, with a bitter expression on his face. He receives you in the hall of his house.
 - Senemis: Ah, there you are. You are the misthios they call Eagle Bearer, wasn't it? What is your name?
 * Alexios
 # you name Alexios
@@ -21,7 +24,7 @@ Senemis is an old man, with a bitter expression on his face. He receives you in 
 # you name Alexios 1 2
 ++ 2
 % This is a comment
-- Senemis: Well, Alexios, I have a job for you. A very high profile job. 
+- Senemis: Well, Alexios, I have a job for you. A very high profile job.
 - You: High profile... in which circles?
 - Senemis: In Greek circles, though he called himself Spartan once. Before he betrayed us all. And now he's trying to win back Athen's favor! He's a snake in the grass, a man who brings war and dispute everywhere he goes, a man who sweettalks everyone into being at his bidding.
 &
@@ -36,14 +39,14 @@ That sounds suspiciously like a member of the cult you thought you destroyed.
 * A job is a job.
 * Yes. I think I know the kind...
 &
-- Senemis: Of course. 
+- Senemis: Of course.
 - You: What can you tell me about him?
 - He is currently on Samos, trying to get in touch with the Athenian leadership there. Goes by the name of Deitomachos.
 - You: How do I find him?
 &
 - Senemis: We have a guy there, Cleinias. An Athenian. Find him in the temple of Apollo, he will guide you in the right direction.
 * Spartans and Athenians working together... A lot must have changed since I left Greece.
-* I trust travel expenses are covered and a large fee will be waiting for me when I'm back? 
+* I trust travel expenses are covered and a large fee will be waiting for me when I'm back?
 * Alright. See you in a week.
 &
 Senemis smiles.
@@ -61,7 +64,7 @@ You take the first ship to Samos and arrive there a day later. Samos is currentl
 # you disguise athenian 1 6
 # you disguise spartan 2 1
 ++ 3
-You go up to some people in the harbor to ask for the way. They direct you to the temple, near the mountain in the distance. 
+You go up to some people in the harbor to ask for the way. They direct you to the temple, near the mountain in the distance.
 &
 You go up to some people in the harbor to ask for the way. They shun you.
 * Threaten them
@@ -72,20 +75,20 @@ ju 2
 ju 5
 % not finished
 &
-That did not go over well... As the athenian guards arrive you barely manage to get away. They'll be looking for someone dressed like you, so you have no other choice but to change your clothes to blend in. 
+That did not go over well... As the athenian guards arrive you barely manage to get away. They'll be looking for someone dressed like you, so you have no other choice but to change your clothes to blend in.
 * Change clothes
 # you disguise athenian
 ju 4
 &
-You slowly try to find your way to the temple, warrily watching your back as people stare at you. In the end you have no other choice but to pay a beggar to show you. 
-* Pay. (- money) 
+You slowly try to find your way to the temple, warrily watching your back as people stare at you. In the end you have no other choice but to pay a beggar to show you.
+* Pay. (- money)
 # you marks -2
 &
 When you finally find Cleinias he laughs.
 - Well, I guess I should have known Spartans are stupid enough to come to enemy territory dressed like... this. Come back when I won't look like a traitor talking to you.
 * Fuck off.
 &
-But... You have no other choice. 
+But... You have no other choice.
 * Change clothes
 # you disguise athenian
 % AT TEMPLE (CONVERGENCE)
@@ -106,8 +109,8 @@ When you finally arrive at the temple, dressed as an Athenian, you find Cleinias
 * - You: Where can I find him?
 ju 2
 &
-- Cleinias: No, not at all. If that's the name they gave you that's what we'll work with. 
-- You: So it isn't his real name. 
+- Cleinias: No, not at all. If that's the name they gave you that's what we'll work with.
+- You: So it isn't his real name.
 - Cleinias: No.
 - You: And you won't give me his real name.
 - Cleinias: No.
@@ -150,12 +153,12 @@ ju 2
 &
 A man on the street tells you the whole of the athenian army is now based on Samos. The capital is having trouble, and the army has about become independent from it. You ask for more information, but the man doesn't know more.
 &
-When you finally set out to find an inn it's late, and most of them are full. After a tiring search you get permission to stay in someone's stables for the night, but this does not exactly guarantee a good night's sleep. The next morning you set out to the agora in a bad mood. 
+When you finally set out to find an inn it's late, and most of them are full. After a tiring search you get permission to stay in someone's stables for the night, but this does not exactly guarantee a good night's sleep. The next morning you set out to the agora in a bad mood.
 &
 You arrive at the agora early. There's a small, roofed in altar surrounded by trees at the edge of the agora. You climb on top, hidden by the shadows, and wait. When he comes at least you spot the purple robe and silver hair from miles away. It's not hard to recognize the person they belong too: it's your old friend Alkybiades.
 &
 A few years ago, before you found your family and your Spartan citizenship was restored, you used to do various jobs around Athens. Perikles was still alive at the time and you greatly respected him. That's also where you met his protegée Alkybiades, who you respected less but still grew to like.
-& 
+&
 He was a brilliant general and rhetorican, overflowing with ideas and plots to reach his not-always-very-moral goals. He was a beautiful youth pining after Socrates and sleeping around with everyone around him in the meantime. You didn't see eye to eye on everything, but you grew very close as friends..
 * Very good friends.
 * Very good friends, and lovers.
@@ -203,20 +206,20 @@ ju -2
 # you name Alexios 2 1
 ++ 2
 Alkybiades smiles, not frightened at all.
-- Alkybiades: It's good to see you Kassandra. 
+- Alkybiades: It's good to see you Kassandra.
 - You: It's certainly not good to see you. Why didn't you stop them?!
 - Alkybiades: I'm sorry, truly. But statistically I think I made the right choice.
 - You: "Statistically" you thought you'd try to kill me?
 &
 Alkybiades smiles, not frightened at all.
-- Alkybiades: It's good to see you Alexios. 
+- Alkybiades: It's good to see you Alexios.
 - You: It's certainly not good to see you. Why didn't you stop them?!
 - Alkybiades: I'm sorry, truly. But statistically I think I made the right choice.
 - You: "Statistically" you thought you'd try to kill me?
 &
-- Alkybiades: Yes. You're a misthios who's fought on a lot of sides of this war. I haven't seen you in ages. Either you're here to kill me, in which case I had to take my chance with those guards, or you weren't. 
-- You: In which case I just murdered a lot of people. 
-- Alkybiades: Yes. And I'd been looking for a way to get rid of them, so thanks. 
+- Alkybiades: Yes. You're a misthios who's fought on a lot of sides of this war. I haven't seen you in ages. Either you're here to kill me, in which case I had to take my chance with those guards, or you weren't.
+- You: In which case I just murdered a lot of people.
+- Alkybiades: Yes. And I'd been looking for a way to get rid of them, so thanks.
 - You: Why?
 &
 - Alkybiades: They'd been paid to betray me. And I knew they couldn't possibly have hurt you, so really! It was the safest choice. And I'm glad you're alive! This must suuuurely mean you had no intention of hurting me.
@@ -232,13 +235,13 @@ ju 4
 Alkybiades smiles proudly.
 - Alkybiades: I knew it! And I don't take it personally, truly.
 - You: They called you Deitonomachos, I didn't know it was you.
-- Alkybiades: My mother's name... There's this whole idea in Athens about a curse on my mother's family, I think it came from that. I'll tell you the story sometime if you want. 
+- Alkybiades: My mother's name... There's this whole idea in Athens about a curse on my mother's family, I think it came from that. I'll tell you the story sometime if you want.
 - You: There are some other things I'd like to know first.
 
 % 2
 &
 - Alkybiades: Yes, of course, I understand. But first: who gave you the job?
-* - You: A spartan called Senemis. 
+* - You: A spartan called Senemis.
 * - You: It came from Sparta.
 * - You: Can't tell you. A job is a job.
 
@@ -252,7 +255,7 @@ Alkybiades shrugs.
 
 % 4
 &
-- Alkybiades: Yes of course! When was the last time we saw each other again? 
+- Alkybiades: Yes of course! When was the last time we saw each other again?
 - You: Pericles was stil alive, you were just beginning your political carreer and schemes and I was hunting the cult.
 - Alkybiades: You're still as enchanting as ever, you know. But so much else has happened since then...
 * - You: Why don't you start at the begining?
@@ -262,7 +265,7 @@ Alkybiades shrugs.
 Alkybiades gestures you to sit down. You find a quiet spot off the busy ways of the Agora and away from the dead bodies of Alkybiades' guards. He stays in pensitive silence for a while before starting.
 - Alkybiades: I'm beginning this story fully aware that you could kill me at any moment...
 - You: ...I...
-- Alkybiades: ...So I want you to know right now it's going to sound bad. Very bad. 
+- Alkybiades: ...So I want you to know right now it's going to sound bad. Very bad.
 &
 - Alkybiades: People will tell you my story entails changing factions three times, betraying people time and time again. It's not as bad as that sounds, but in the end the facts do come down to that.
 * - You: This is not a promising beginnning.
@@ -270,7 +273,7 @@ Alkybiades gestures you to sit down. You find a quiet spot off the busy ways of 
 * - You: ...Okay.
 &
 - Alkybiades: I'm just telling you so you don't decide to kill me everytime something bad happens.
-- You: I promise to hear you out till the end. 
+- You: I promise to hear you out till the end.
 - Alkybiades: Good. So, have you heard of the Sicilian expedition?
 * It rings a bell...
 * Yeah no I think I was somewhere in Asia at the time.
@@ -297,27 +300,27 @@ ju 2
 ! alky saved 10
 ! alky lovers 20
 &
-Alkybiades chuckles. 
-- Alkybiades: In any case, that's how I ended up in Sparta. 
-* - You: I don't consider that transition as logical as you seem to do. 
+Alkybiades chuckles.
+- Alkybiades: In any case, that's how I ended up in Sparta.
+* - You: I don't consider that transition as logical as you seem to do.
 ! alky saved -10
-* - You: That was clever... I suppose. 
+* - You: That was clever... I suppose.
 ! alky saved 20
 &
-- Alkybiades: Did I have another choice? All cities are either allies of Sparta or Athens. If not Athens, Sparta was the only place I'd be save. Besides, I have friends there. Had. No, have. I still have friends there. 
+- Alkybiades: Did I have another choice? All cities are either allies of Sparta or Athens. If not Athens, Sparta was the only place I'd be save. Besides, I have friends there. Had. No, have. I still have friends there.
 - You: So why did Sparta kick you out?
 &
-- Alkybiades: First you should know I won considerable victories for Sparta. Considerable as in, Athen's treasury was empty and the city almost in ruins when I was done. 
+- Alkybiades: First you should know I won considerable victories for Sparta. Considerable as in, Athen's treasury was empty and the city almost in ruins when I was done.
 - You: You say that was all on you?
-- Alkybiades: The ideas were all mine, I obviously didn't execute all of them. But I served Sparta well. 
+- Alkybiades: The ideas were all mine, I obviously didn't execute all of them. But I served Sparta well.
 &
 - You: So... Why did Sparta kick you out?
 - Alkybiades: It might have involved a woman.
-* - You: Of course it did. 
+* - You: Of course it did.
 * - You: Are you fucking serious? How stupid can you be?
 ! alky saved -20
 &
-- Alkybiades: Spartan women have a lot more freedom than Athenian do. You know that. 
+- Alkybiades: Spartan women have a lot more freedom than Athenian do. You know that.
 - You: Who was it?
 - Alkybiades: Husbands can even be okay with their wives having children by other men! Cases have been heard...
 - You: Who. Was. It.
@@ -326,9 +329,9 @@ Alkybiades chuckles.
 &
 - Alkybiades: Amazing woman. And I had nothing else to do at the time, so...
 * - You: ...So you fucked the queen.
-* - You: I thought you were smarter than that. 
+* - You: I thought you were smarter than that.
 &
-- Alkybiades: I didn't get caught, exactly, it's just that she insisted on calling our son Alkybiades in private and people started to catch on. 
+- Alkybiades: I didn't get caught, exactly, it's just that she insisted on calling our son Alkybiades in private and people started to catch on.
 - You: I can't believe you.
 - Alkybiades: Yeah, I can't believe myself either sometimes.
 &
@@ -341,8 +344,8 @@ ju 4
 * You: You should have stayed and faced the consequences.
 ! alky saved -40
 &
-- Alkybiades: That's... harsh. I don't think any of the dead sentences I've received in my life have been earned. 
-* - You: I do. A snake like you doesn't deserve to live. So I'll just have to carry it out myself. 
+- Alkybiades: That's... harsh. I don't think any of the dead sentences I've received in my life have been earned.
+* - You: I do. A snake like you doesn't deserve to live. So I'll just have to carry it out myself.
 
 &
 A tear rolls down Alkybiades cheek as you bow over him with your dagger.
@@ -358,38 +361,38 @@ XXX
 ju -3
 &
 - You: Who did you fight against in Persia?
-- Alkybiades: Well, I was fighting for Persia's interests, of course. 
+- Alkybiades: Well, I was fighting for Persia's interests, of course.
 - You: So...
 - Alkybiades: So yes, against both Athens and Sparta.
 - You: Both of them.
 - Alkybiades: Yes. Though I wasn't really 'fighting'.
-- You: You weren't. 
+- You: You weren't.
 &
-- Alkybiades: No. I was under the protection of a satrap who I adviced. He was high up in the hierarchy. 
+- Alkybiades: No. I was under the protection of a satrap who I adviced. He was high up in the hierarchy.
 - You: And he listened.
-- Alkybiades. Yes, of course. We were... 'close'. 
+- Alkybiades. Yes, of course. We were... 'close'.
 * - You: I think I know what kind of 'close' you mean.
 * - You: Can't say I'm surprised.
 &
 Alkybiades chuckles.
 - Alkybiades: We were close once too, misthios.
 * - You: That was a long time ago.
-* - You: Not that kind of close though. 
+* - You: Not that kind of close though.
 ! alky lovers -20
 * - You: Those were the good times.
 ! alky lovers 20
 &
 - You: So what kind of advice did you give him?
-- Alkybiades: Well, to let Athens and Sparta fight it out for a while, let them weaken each other, and then attack. 
+- Alkybiades: Well, to let Athens and Sparta fight it out for a while, let them weaken each other, and then attack.
 * - You: So first you turned on Athens and then you turned on the whole of GREECE?!
 ! alky saved -20
-* - You: Sensible advice... for Persia. 
+* - You: Sensible advice... for Persia.
 ! alky saved 10
 &
-- Alkybiades: Both Athens and Sparta had forsaken me. If any of them strenghtened their bonds with Persia the Persians would have been forced to turn me in. 
+- Alkybiades: Both Athens and Sparta had forsaken me. If any of them strenghtened their bonds with Persia the Persians would have been forced to turn me in.
 - You: None of which explains what you are doing here now, on Samos, with the Athenian army, trying to get to speak at the assembly this Friday.
 &
-- Alkybiades: Ah, yes, I was getting to that. 
+- Alkybiades: Ah, yes, I was getting to that.
 - You: So do.
 - Alkybiades: Where to start... Have you heard of the coup of the 400?
 - You: They're ruling Athens now, right?
@@ -400,18 +403,18 @@ Alkybiades chuckles.
 * It's a disgrace to democracy and what Athens stands for.
 ! you athenian 60
 &
-- Alkybiades: Yes... So anyways, what it comes down to is this: I was in talks with Athens for me to come back, then the coup happened, democracy was thrown away, and the army based on Samos declared independence. 
+- Alkybiades: Yes... So anyways, what it comes down to is this: I was in talks with Athens for me to come back, then the coup happened, democracy was thrown away, and the army based on Samos declared independence.
 - You: Wait, what?
-- Alkybiades: Yeah, most of the army was here on Samos during the coup. They decided to stay democratic. 
+- Alkybiades: Yeah, most of the army was here on Samos during the coup. They decided to stay democratic.
 &
 - You: Which still doesn't explain what you are doing here.
-- Alkybiades: Well, they're willing to hear me out. So I'm here preparing for my big speech on Friday. 
+- Alkybiades: Well, they're willing to hear me out. So I'm here preparing for my big speech on Friday.
 - You: Big speech on what?
-- Alkybiades: Big speech explaining everything I just told you in such a way, that they'll think I was a democractic Athenian all along. 
+- Alkybiades: Big speech explaining everything I just told you in such a way, that they'll think I was a democractic Athenian all along.
 &
 - You: You say the army is independent of Athens now?
 - Alkybiades: The army IS Athens now. Those tyrants aren't gonna be in power very long.
-- You: And what is your... end game? 
+- You: And what is your... end game?
 &
 +
 # you name Kassandra 1 2
@@ -420,7 +423,7 @@ Alkybiades chuckles.
 - Alkybiades: Well Kassandra, for now I would just like to go home.
 - You: No political games then?
 - Alkybiades: The same political games as ever. But let no one say I've never supported the cause I fighted for less than a 100%. And that cause, right now, is a democratic Athens. If they let me.
-& 
+&
 - Alkybiades: Well Alexios, for now I would just like to go home.
 - You: No political games then?
 - Alkybiades: The same political games as ever. But let no one say I've never supported the cause I fighted for less than a 100%. And that cause, right now, is a democratic Athens. If they let me.
@@ -428,10 +431,10 @@ Alkybiades chuckles.
 - You: But...
 * - You: ...you don't even know whether there will be a home to go back to.
 ! you athenian 20
-* - You: ...you aren't even that democratic. 
+* - You: ...you aren't even that democratic.
 &
-Alkybiades shrugs. 
-- Alkybiades: This is the only chance I get and I'm gonna take it. 
+Alkybiades shrugs.
+- Alkybiades: This is the only chance I get and I'm gonna take it.
 - You: I see.
 - Alkybiades: So, misthios, what are you gonna do about it? Will you let me speak, or will you kill me?
 * - You: I could never kill you.
@@ -441,31 +444,31 @@ ju -15
 * - You joke: Not right now. I still have a week to decide, don't I? I'm not in a hurry.
 ju 4
 &
-% 1 
-Alkybiades' expression softens. 
-- Alkybiades: Coming from a misthios that means a lot. I'm happy I got to see you. Will you stay around for a while? 
+% 1
+Alkybiades' expression softens.
+- Alkybiades: Coming from a misthios that means a lot. I'm happy I got to see you. Will you stay around for a while?
 &
 You feel like you should maybe talk to Cleinias again, to get more information on why people want Alkybiades dead.
 * - You say: Yes. I still have business on the island.
 ju 4
-* - You: Can't leave you alone on such a cliffhanger. 
+* - You: Can't leave you alone on such a cliffhanger.
 ju 2
 * - You: No, I think I will go home. But I am happy to have seen you too.
 % 2
 &
-You told Alkybiades you would go home, but the truth is you can't. Senemis is in Sparta and he's influential, so you'll have to stay put for a while. Athens is no choice either, though you have friends there, so the only other option you see is the same that Alkybiades chose. 
-* There are enough jobs for a misthios in Persia. 
+You told Alkybiades you would go home, but the truth is you can't. Senemis is in Sparta and he's influential, so you'll have to stay put for a while. Athens is no choice either, though you have friends there, so the only other option you see is the same that Alkybiades chose.
+* There are enough jobs for a misthios in Persia.
 XXX
 % 3
 &
-Alkybiades laughs. 
+Alkybiades laughs.
 - Alkybiades: Ah, misthios. I'm afraid I will have to leave YOU alone though. I have a lot to do today. Lot's of people I have to convince of my cause.
 * - You say, thinking of Cleinias: That's okay. I have people I need to talk to as well.
 ju 2
 * - You, figuring you  can skip seeing Cleinias: That's okay, I can entertain myself.
 % 5
 &
-- Alkybiades: Maybe we can see each other again tomorrow morning? I'd really like to catch up with an old... friend.  
+- Alkybiades: Maybe we can see each other again tomorrow morning? I'd really like to catch up with an old... friend.
 * - You: I'd like to catch up with an old... 'friend' as well. See you tomorrow.
 xXx
 ! alky lovers 20
@@ -473,49 +476,49 @@ xXx
 xXx
 % 6
 &
-- Alkybiades: I'll be here again first thing tomorrow morning. Look me up. Now that my imminent death has been averted I'd like to just catch up with an old friend. 
-- You: I will. 
+- Alkybiades: I'll be here again first thing tomorrow morning. Look me up. Now that my imminent death has been averted I'd like to just catch up with an old friend.
+- You: I will.
 * Go look for Cleinias
 &
 You find Cleinias in the same spot you found him yesterday. He's surprised to see you.
-- Cleinias: What are you doing here? Did you not find him? 
+- Cleinias: What are you doing here? Did you not find him?
 * - You: Nope. Nowhere to be found. I did find out the man you want me to kill is actually Alkybiades, so I came to talk about that.
 ! clen 2talk 100
 * - You: Yes, I did find him, and I figured I'd come talk to you about why you want to see Alkybiades dead.
 ! clen 2talk 100
 &
-% 1 
+% 1
 Cleinias look startled.
 - Cleinias: What does it matter to you? A misthios is a misthios, isn't it? It's your job.
-* -You: Yes, a misthios is a misthios, but when a misthios gets a job to kill such an important figure the misthios wants to know what the motives behind the assasination are. 
-* -You: Well, this misthios knows the target, and this misthios would like to know what your motives are. 
+* -You: Yes, a misthios is a misthios, but when a misthios gets a job to kill such an important figure the misthios wants to know what the motives behind the assasination are.
+* -You: Well, this misthios knows the target, and this misthios would like to know what your motives are.
 ju 8
 &
 % 2
 - Cleinias: They're not my motives, I'm just helping the guy who does want to see him dead.
 - You: Yeah? So why do you help Spartans then, being an Athenian yourself?
-- Cleinias: Alkybiades has many enemies in Athens too, you now. 
+- Cleinias: Alkybiades has many enemies in Athens too, you now.
 * - You: I'm not asking about those enemies, I'm asking about you.
 &
 % 3
 - Cleinias: ... Personal reasons.
 - You: Personal.
 - Cleinias: Yes.
-- You: Will you expand? 
+- You: Will you expand?
 - Cleinias says, arrogantly: I don't have to if I don't want to.
 * Hold your dagger against his throat.
 * Take your dagger out and give it a spin, without loosing eye contact.
 &
 % 4
-- Cleinias: Alright alright! He's my brother, okay? He's my brother. He's my brother, and he's a dick, a mad man, an attention seeker, a snake, and I hate him. 
-- You: ... Really. 
-- Cleinias: Yes... 
+- Cleinias: Alright alright! He's my brother, okay? He's my brother. He's my brother, and he's a dick, a mad man, an attention seeker, a snake, and I hate him.
+- You: ... Really.
+- Cleinias: Yes...
 - You: Well okay. And I thought my siblings and I had issues.
 &
 % 5
 - Cleinias: Just look at what he's doing to Athens! Athens is in ruins, it's ruled by tyrants, and it's all his fault!
 * - You: I'd say that that is the tyrants' fault.
-* - You: How come? 
+* - You: How come?
 ! alky saved -20
 &
 % 6
@@ -523,13 +526,13 @@ ju 8
 - You: An oligarchy? Why would he do that?
 - Cleinias: He claimed it was necessary for the Athenians to be able to negotiate with the Persians. Not only that, HE SAID HE WOULD ONLY COME BACK IF ATHENS WAS AN OLIGARCHY! THAT'S WHY THE REVOLUTION HAPPENED!
 * - You: Okay... I'll have to look into that.
-* - You: I feel like there's another side to this story. 
-* - You: You don't look like a trustworthy person. 
+* - You: I feel like there's another side to this story.
+* - You: You don't look like a trustworthy person.
 &
-% 7 
+% 7
 Cleinias doesn't listen to you. He looks completely posessed, and people around you are starting to notice.
-- Cleinias: And that's not the worst part! Oh no no no, not by far, the WORST PART is that he's now here, on Samos, trying to convince the last defenders of democracy in this world, that HE is the champion they need, that HE didn't have ANYTHING to do with all of this. 
-* You slowly back away while he goes on on his tangent. 
+- Cleinias: And that's not the worst part! Oh no no no, not by far, the WORST PART is that he's now here, on Samos, trying to convince the last defenders of democracy in this world, that HE is the champion they need, that HE didn't have ANYTHING to do with all of this.
+* You slowly back away while he goes on on his tangent.
 &
 % 8
 You have a lot of stuff to think about before you meet with Alkybiades again tomorrow.
@@ -537,24 +540,24 @@ You have a lot of stuff to think about before you meet with Alkybiades again tom
 xXx
 % 9
 &
-- Cleinias: Wait, you know Alkybiades? How? 
+- Cleinias: Wait, you know Alkybiades? How?
 * - You: None of your business. I just want to know your motives.
 ju -7
 * - You: We knew each other in Athens back when Pericles was alive.
-* - You: We were lovers, happy now? 
+* - You: We were lovers, happy now?
 ! alky lovers 20
 &
 % 10
 Cleinias' face goes white.
 - Cleinias: Wait... You, I remember you! Yes...
 - You: What?
-- Cleinias: I remember seeing you and Alkybiades... Yes, yes. 
+- Cleinias: I remember seeing you and Alkybiades... Yes, yes.
 - You: I don't remember you...
 &
 % 11
-Cleinias laughs maniacally. 
+Cleinias laughs maniacally.
 - Cleinias: Of course not. No one remembers me. Everyone remembers Alkybiades though...
-- You: Look man, I'm sorry I don't remember you. Just tell me what you're motives are for wanting to kill Alkybiades, and I'll be on my way... or not. 
+- You: Look man, I'm sorry I don't remember you. Just tell me what you're motives are for wanting to kill Alkybiades, and I'll be on my way... or not.
 &
 % 12
 - Cleinias: I don't want to talk to you.
