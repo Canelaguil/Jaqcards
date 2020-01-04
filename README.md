@@ -44,4 +44,4 @@ You can read more on all of this in the help.input file in the input folder! Be 
 
 ## For Developers
 I mean, if you're here you probably have some idea of what you want to do with this so... Just do it. The code is quite
-self explanetory.
+self explanatory.
