@@ -86,16 +86,15 @@ Goal:
 &   end of character goal_list
 
 Card:
-*   begin of option
-#   statement regarding an attribute
-!   statement regarding a goal
+[   title (every line in a title card needs to start with '[ '
 +   beginning of switch
 ++  end of switch
-%   comment
-ju  jump the amount specified (ONLY under an option)
 &   end of card
-xXx end game
-
-
-NOTE: if you want to change a variable that belongs to the Game
-class, you can put 'self' instead of character_keyword.
+%   comment
+*   begin of option
+    ONLY under options:
+        #   statement regarding an attribute
+        !   statement regarding a goal
+        ju  jump the amount specified 
+        xXx end chapter 
+        XXX end game 

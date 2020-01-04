@@ -45,8 +45,7 @@ class New_Game:
             self.i = 0
             self.seen = 0
             self.hop = False
-            self.cards = []
-            self.init_cards(chapter)
+            self.cards = self.init_cards(chapter)
             print("Press enter to continue.")
             self.play_game()
         
@@ -359,8 +358,6 @@ class New_Game:
                 print("You've reached the end of the game.")
                 print("You've seen {} out of {} cards in this chapter.".format(self.seen, len(self.cards)))
                 sys.exit()
-            elif first_c == '$':
-                if os.pathfile(
             else:
                 print("One of the changes was not formatted correctly.")
     

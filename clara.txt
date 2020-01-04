@@ -1,0 +1,45 @@
+Hold on while we load your game...
+... succesfully loaded 3 characters...
+... succesfully loaded 5 goals...
+... succesfully loaded 91 cards...
+----------------------------------------------------------------------
+Welcome to Sparta. You've just come home from a few years travelling
+through Persia, hunting down the last remains of the cult that has
+threatened you your whole life.
+----------------------------------------------------------------------
+Your family welcomes you, and you're just preparing for a nice and
+cosy holiday at home when a messenger appears, telling you the great
+Senemis is looking for a misthios. That isn't someone you can say no
+to, so you reluctantly go to his house.
+
+Exiting the game. No progress saved.
+Hold on while we load your game...
+... succesfully loaded 3 characters...
+... succesfully loaded 5 goals...
+... succesfully loaded 91 cards...
+----------------------------------------------------------------------
+Welcome to Sparta. You've just come home from a few years travelling
+through Persia, hunting down the last remains of the cult that has
+threatened you your whole life.
+----------------------------------------------------------------------
+Your family welcomes you, and you're just preparing for a nice and
+cosy holiday at home when a messenger appears, telling you the great
+Senemis is looking for a misthios. That isn't someone you can say no
+to, so you reluctantly go to his house.
+----------------------------------------------------------------------
+Senemis is an old man, with a bitter expression on his face. He
+receives you in the hall of his house.
+- Senemis: Ah, there you are. You are the misthios they call Eagle
+Bearer, wasn't it? What is your name?
+
+++ 1:
+Alexios
+++ 2:
+Kassandra
+
+-Your choice: Your choice needs to be a number.
+
+-Your choice: Your choice needs to be a number.
+
+-Your choice: 
+Exiting the game. No progress saved.
