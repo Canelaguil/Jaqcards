@@ -26,14 +26,21 @@ forwards and backwards with jumps.
 Some cards give the player options on how to continue. Maybe there are two ways to go home, either through main street
 or passing by the church. Each option then sets into motion a few actions. One action will be that choosing the church route makes
 you jump over the cards specifying the trip through main street. Imagine you want to keep track of how religious your player
-is showing to be. Then one action you can set into motion by the church choise is to add points to a thing we call goals.
+is showing to be. Then one action you can set into motion by the church choice is to add points to a thing we call goals.
 ### Goals and switches
-One thing that distinguishes Jaqcard stories from choose-your-own-adventure books is that Jaqcard cant keep track of values. 
+One thing that distinguishes Jaqcard stories from choose-your-own-adventure books is that Jaqcard can keep track of values. 
 Specifically, it can keep track of writer-defined "goals". A goal can be for example "show compassion to character X". Now
 everytime your player shows compassion to X you can add points to that goal. And how do you reintigrate this into your game
 later? Well, with switches. Switches are special cards that only contain conditions. So, at the end of a conversation with X
 you could have a switch that checks if the points for that goals are more than 60, and if they are, X can show their gratitude
 towards the player.
+
+### Testing your story
+To make it easier to skip to the part of your story that you want to test there are a few commands you can type instead of typing enter when you go to the next card. Be aware that this isn't the case when Jaqcards is waiting for user input.
+```
+whereami - prints the index of the current card
+goto [index] - jumps to the specified index
+```
 ### Input files
 Goals belong to a character and charactes need to be defined. You therefore need (at least) three input files. 
 1. A character file, defining the characters that are gonna have goals
