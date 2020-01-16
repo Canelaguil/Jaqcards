@@ -10,7 +10,9 @@ Green? The only thing you did was assigning True's and False's. The same we did 
 particular murderer, location and weapon. 
 &
 Your assignment of True's and False's was then compared with our predicate logic sentence, and the result was either True or False.
-- But how did we do this?
+True and False sounds simple enough, but it is the basis for a whole field of Computer Science that covers much from satisfability of algorithms,
+automatas in discrete mathematics to even the very core of a computer: 1s and 0s.
+- So how did we do this?
 &
 Well, we used a library that one Jan Verbeek created in his bachelor thesis, a Python libary made especially to easily handle
 these kind of predicate sentences. Check it out on https://scripties.uba.uva.nl/search?id=691650.
