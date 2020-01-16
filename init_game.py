@@ -272,7 +272,7 @@ class New_Game:
             if self.i > 0:
                 self.hop = True
                 self.hop_size = -1
-        elif u_in == "wherami":
+        elif u_in == "whereami":
             print(self.i)
 
         if 'goto' in u_in:
@@ -287,15 +287,16 @@ class New_Game:
 
         # If title card
         if card.text != []:
-            if card.text[0][0] == '[':
-                print('\n' * 2)
-                for line in card.text:
-                    text = sanitize(line[2:])
-                    spaces = (70 - len(text)) / 2
-                    space = ' ' * int(spaces)
-                    print(space + text)
-                print('\n')
-                return
+            if card.text[0] != "":
+                if card.text[0][0] == '[':
+                    print('\n' * 2)
+                    for line in card.text:
+                        text = sanitize(line[2:])
+                        spaces = (70 - len(text)) / 2
+                        space = ' ' * int(spaces)
+                        print(space + text)
+                    print('\n')
+                    return
 
         # Print normal text
         whole = ""
