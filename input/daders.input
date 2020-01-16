@@ -41,6 +41,11 @@ Scarlet looks down and bats her eyes at you.
 - Scarlet: Well yes, of course I was angry. I'm an artist, I never got the chance to explore my creativity. 
 - You: And how can I know you didn't kill him? 
 &
++
+! scarlet iskiller 1 2 1
+! scarlet iskiller 0 1 2
+++ 2
+
 % Guilty
 - Scarlet: I would never kill him... We were lovers.
 - You: I see...
