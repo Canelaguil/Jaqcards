@@ -1,14 +1,16 @@
+[ CHAPTER 3
+[ Who did it?
+&
 % Dader
 The three suspects are still where you left them in the living room. You will call them to speak with you one by one in the study, but who will you call to you first?
-* C. Scarlet
+* Miss C. Scarlet
 ju 1
-* N. Mustard
-! mustard iskiller 1
-ju 10
-* F. Green
-ju 20
+* Colonel N. Mustard
+ju 11
+* Reverend F. Green
+ju 21
 * I'm done talking to people, I know who it is.
-ju 30
+ju 31
 &
 % C. Scarlet
 C. Scarlet greets you with a smile.
@@ -43,7 +45,7 @@ Scarlet looks down and bats her eyes at you.
 &
 +
 ! scarlet iskiller 1 2 1
-! scarlet iskiller 0 1 2
+! scarlet iskiller -1 1 2
 ++ 2
 
 % Guilty
@@ -58,12 +60,12 @@ Scarlet looks down and bats her eyes at you.
 Do you think C. Scarlet is guilty?
 * Yes
 ! scarlet issuspect 1
-ju 1
+ju 20
 * No
 ! scarlet issuspect 0
-ju -9
+ju -10
 * I want to think about it
-ju -9
+ju -10
 
 &
 % N. Mustard
@@ -121,9 +123,9 @@ Do you think Colonel N. Mustard is guilty?
 ju 9
 * No
 ! mustard issuspect 0
-ju -19
+ju -20
 * I want to think about it
-ju -19
+ju -20
 &
 
 % F. Green
@@ -170,13 +172,13 @@ Do you think F. Green is guilty?
 ju 1
 * No
 ! green issuspect 0
-ju -28
+ju -29
 * I want to think about it
-ju -28
+ju -29
 &
 % Eind
-This is the last card where the results are shown. 
-* End
+You picked your weapon, murderer and location. Did you pick right?
+* Find out.
 ju 100
 &
 Who do you think is the killer?
