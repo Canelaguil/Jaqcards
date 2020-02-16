@@ -70,8 +70,8 @@ class New_Game:
                     print(sanitize(line))
             sys.exit()
 
-        if len(sys.argv) is not 4:
-            if len(sys.argv) is 2:
+        if len(sys.argv) != 4:
+            if len(sys.argv) == 2:
                 if os.path.isfile(sys.argv[1]):
                     gamefile = open(sys.argv[1])
                     f_line = True
