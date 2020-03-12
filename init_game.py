@@ -21,7 +21,6 @@ def sanitize(string):
 
 
 class New_Game:
-
     def __init__(self):
         # Global vars
         self.characters = {}
@@ -58,14 +57,14 @@ class New_Game:
         """
         files = []
 
-        if sys.argv[1] == 'help':
-            file = open('input/help.input')
+        if sys.argv[1] == "help":
+            file = open("input/help.input")
             for line in file:
                 print(sanitize(line))
             ans = input("\n\nDo you want some examples? [Y/n] ")
             ans = sanitize(ans)
-            if ans == 'Y':
-                file = open('input/examples.input')
+            if ans == "Y":
+                file = open("input/examples.input")
                 for line in file:
                     print(sanitize(line))
             sys.exit()
@@ -83,13 +82,11 @@ class New_Game:
                         else:
                             files.append(fi)
             else:
-                print(
-                    "This game requires 3 files as arguments OR a file containing these three:")
+                print("This game requires 3 files as arguments OR a file containing these three:")
                 print("-A character file")
                 print("-A goal file")
                 print("-A card file")
-                print(
-                    "If you're not sure about the input format, run 'python3 init_game help'.")
+                print("If you're not sure about the input format, run 'python3 init_game help'.")
                 sys.exit()
         else:
             files.append(sys.argv[1])
@@ -98,8 +95,7 @@ class New_Game:
 
         for file in files:
             if not os.path.isfile(file):
-                print(
-                    "{} was not recognized as file. Please try again with a correct filepath.".format(file))
+                print("{} was not recognized as file. Please try again with a correct filepath.".format(file))
                 sys.exit()
 
         print("Hold on while we load your game...")
@@ -116,10 +112,10 @@ class New_Game:
         file = open(file_name)
         attributes = []
         for line in file:
-            line = line.split(' ')
-            if line[0] == '&':
+            line = line.split(" ")
+            if line[0] == "&":
                 cid = sanitize(line[1])
-                if cid == 'you':
+                if cid == "you":
                     self.characters[cid] = Playable_Character(*attributes)
                 else:
                     self.characters[cid] = Non_Playable_Character(*attributes)
@@ -129,8 +125,7 @@ class New_Game:
                 attributes.append(item)
 
         if len(self.characters) == 0:
-            print(
-                "Something went wrong. Please check your character file before trying again.")
+            print("Something went wrong. Please check your character file before trying again.")
             sys.exit()
 
         print("... succesfully loaded {} characters...".format(len(self.characters)))
@@ -147,13 +142,13 @@ class New_Game:
 
         file = open(file_name)
         for line in file:
-            if line[0] == '&':
-                temp = line.split(' ')
+            if line[0] == "&":
+                temp = line.split(" ")
                 key = sanitize(temp[1])
                 self.characters[key].goals = goals
                 goals = {}
-            elif line[0] == '+':
-                temp = line.split(' ')
+            elif line[0] == "+":
+                temp = line.split(" ")
                 g_key = sanitize(temp[1])
                 goal_atr.insert(0, g_key)
                 goals[g_key] = Goal(*goal_atr)
@@ -164,8 +159,7 @@ class New_Game:
                 goal_atr.append(atr)
 
         if no_goals == 0:
-            print(
-                "Something went wrong. Please check your goal file before trying again.")
+            print("Something went wrong. Please check your goal file before trying again.")
             sys.exit()
 
         print("... succesfully loaded {} goals...".format(no_goals))
@@ -181,37 +175,37 @@ class New_Game:
         o = -1
         count = 0
         for line in file:
-            cur_line = line.split(' ')
+            cur_line = line.split(" ")
             action = sanitize(cur_line[0])
-            if action == '&':
+            if action == "&":
                 cur.no_options = o + 1
                 count += 1
                 cur.i = count
                 self.cards.append(cur)
                 cur = Card()
                 o = -1
-            elif action == '+':
+            elif action == "+":
                 switch = True
-            elif action == '++':
+            elif action == "++":
                 cur_switch.default = cur_line[1]
                 self.cards.append(cur_switch)
                 cur_switch = Switch()
                 switch = False
-            elif action == '*':
+            elif action == "*":
                 txt = line.replace("* ", "")
                 txt = sanitize(txt)
                 cur.options.append(txt)
                 cur.changes.append([])
                 o += 1
-            elif action == '-':
+            elif action == "-":
                 txt = sanitize(line)
                 cur.dialogue.append(txt)
-            elif action == '%':
+            elif action == "%":
                 pass
-            elif action == 'ju' or action == 'xXx' or action == 'XXX':
+            elif action == "ju" or action == "xXx" or action == "XXX":
                 do_thing = sanitize(line)
                 cur.changes[o].append(do_thing)
-            elif action == '!' or action == '#':
+            elif action == "!" or action == "#":
                 if switch:
                     con = sanitize(line)
                     cur_switch.condition.append(con)
@@ -225,8 +219,7 @@ class New_Game:
 
         self.no_cards = len(self.cards)
         if self.no_cards == 0:
-            print(
-                "Something went wrong. Please check your card file before trying again.")
+            print("Something went wrong. Please check your card file before trying again.")
             sys.exit()
 
         print("... succesfully loaded {} cards for this chapter...".format(self.no_cards))
@@ -263,10 +256,10 @@ class New_Game:
         u_in = sanitize(u)
         if u_in == "":
             return
-        elif u_in == 'exit':
+        elif u_in == "exit":
             print("Are you sure you want to leave the game?")
             u2 = input("[Y/n]: ")
-            if u2 == 'Y':
+            if u2 == "Y":
                 sys.exit()
         elif u_in == "back":
             if self.i > 0:
@@ -275,8 +268,8 @@ class New_Game:
         elif u_in == "whereami":
             print(self.i)
 
-        if 'goto' in u_in:
-            command = u_in.split(' ')
+        if "goto" in u_in:
+            command = u_in.split(" ")
             self.i = int(command[1])
 
     def print_card(self, card):
@@ -288,14 +281,14 @@ class New_Game:
         # If title card
         if card.text != []:
             if card.text[0] != "":
-                if card.text[0][0] == '[':
-                    print('\n' * 2)
+                if card.text[0][0] == "[":
+                    print("\n" * 2)
                     for line in card.text:
                         text = sanitize(line[2:])
                         spaces = (70 - len(text)) / 2
-                        space = ' ' * int(spaces)
+                        space = " " * int(spaces)
                         print(space + text)
-                    print('\n')
+                    print("\n")
                     return
 
         # Print normal text
@@ -333,33 +326,30 @@ class New_Game:
         for change in changes:
             c = change.split(" ")
             first_c = c[0]
-            if first_c == '!':
+            if first_c == "!":
                 # ! you spartan 10
                 obj = self.characters[c[1]]
                 goal = c[2]
                 obj.goals[goal].points = c[3]
-            elif first_c == '#':
+            elif first_c == "#":
                 # # you name Kassandra
                 obj = self.characters[c[1]]
                 atr = c[2]
                 new_value = c[3]
                 setattr(obj, atr, new_value)
-            elif first_c == 'ju':
+            elif first_c == "ju":
                 self.hop = True
                 self.hop_size = int(c[1])
-            elif first_c == 'xXx':
+            elif first_c == "xXx":
                 print("You've reached the end of the chapter.")
-                print("You've seen {} out of {} cards.".format(
-                    self.seen, len(self.cards)))
+                print("You've seen {} out of {} cards.".format(self.seen, len(self.cards)))
                 self.i += 100000
-            elif first_c == 'XXX':
+            elif first_c == "XXX":
                 print("You've reached the end of the game.")
-                print("You've seen {} out of {} cards in this chapter.".format(
-                    self.seen, len(self.cards)))
+                print("You've seen {} out of {} cards in this chapter.".format(self.seen, len(self.cards)))
                 sys.exit()
             else:
                 print("One of the changes was not formatted correctly.")
-
 
     def get_switched_index(self, switch):
         """
@@ -367,23 +357,22 @@ class New_Game:
         """
         # ! you spartan 5 1 10
         for condition in switch.condition:
-            c=condition.split(" ")
-            first_c=c[0]
-            if first_c == '!':
-                obj=self.characters[c[1]]
-                goal_list=getattr(obj, "goals", "error")
-                p=int(goal_list[c[2]].points)
+            c = condition.split(" ")
+            first_c = c[0]
+            if first_c == "!":
+                obj = self.characters[c[1]]
+                goal_list = getattr(obj, "goals", "error")
+                p = int(goal_list[c[2]].points)
                 if p > int(c[3]):
                     return int(c[4]), int(c[5])
-            elif first_c == '#':
-                obj=self.characters[c[1]]
-                atr=c[2]
-                cur_value=getattr(obj, atr, "error")
+            elif first_c == "#":
+                obj = self.characters[c[1]]
+                atr = c[2]
+                cur_value = getattr(obj, atr, "error")
                 if cur_value == c[3]:
                     return int(c[4]), int(c[5])
 
         return int(switch.default), 1
-
 
     def play_game(self):
         """
@@ -391,26 +380,27 @@ class New_Game:
         """
 
         while self.i < self.no_cards:
-            card=self.cards[self.i]
+            card = self.cards[self.i]
 
             if isinstance(card, Card):
                 self.print_card(card)
                 if card.no_options > 0:
-                    user=self.ask_input(card.no_options) - 1
+                    user = self.ask_input(card.no_options) - 1
                     self.change_vars(card.changes[user])
                 else:
                     self.check_commands()
 
                 if self.hop:
                     self.i += self.hop_size
-                    self.hop=False
+                    self.hop = False
                 else:
                     self.i += 1
             elif isinstance(card, Switch):
-                modifier, self.hop_size=self.get_switched_index(card)
+                modifier, self.hop_size = self.get_switched_index(card)
                 self.i += modifier
-                self.hop=True
+                self.hop = True
 
             self.seen += 1
 
-new_game=New_Game()
+
+new_game = New_Game()
