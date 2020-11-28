@@ -57,22 +57,22 @@ class New_Game:
         files.
         """
         files = []
+        f_line = False # first line
 
-        if sys.argv[1] == 'help':
-            file = open('input/help.input')
-            for line in file:
-                print(sanitize(line))
-            ans = input("\n\nDo you want some examples? [Y/n] ")
-            ans = sanitize(ans)
-            if ans == 'Y':
-                file = open('input/examples.input')
-                for line in file:
-                    print(sanitize(line))
-            sys.exit()
-
-        if len(sys.argv) is not 4:
-            if len(sys.argv) is 2:
-                if os.path.isfile(sys.argv[1]):
+        if len(sys.argv) != 4:
+            if len(sys.argv) == 2:
+                if sys.argv[1] == 'help':
+                    file = open('input/help.input')
+                    for line in file:
+                        print(sanitize(line))
+                    ans = input("\n\nDo you want some examples? [Y/n] ")
+                    ans = sanitize(ans)
+                    if ans == 'Y':
+                        file = open('input/examples.input')
+                        for line in file:
+                            print(sanitize(line))
+                    sys.exit()
+                elif os.path.isfile(sys.argv[1]):
                     gamefile = open(sys.argv[1])
                     f_line = True
                     for f in gamefile:
@@ -82,7 +82,7 @@ class New_Game:
                             f_line = False
                         else:
                             files.append(fi)
-            else:
+            elif len(sys.argv) == 1: 
                 print(
                     "This game requires 3 files as arguments OR a file containing these three:")
                 print("-A character file")
@@ -90,7 +90,15 @@ class New_Game:
                 print("-A card file")
                 print(
                     "If you're not sure about the input format, run 'python3 init_game help'.")
-                sys.exit()
+                gamefile = open('SnakeInTheGrass')
+                f_line = True
+                for f in gamefile:
+                    fi = sanitize(f)
+                    if f_line:
+                        self.no_chapters = int(fi)
+                        f_line = False
+                    else:
+                        files.append(fi)
         else:
             files.append(sys.argv[1])
             files.append(sys.argv[2])
