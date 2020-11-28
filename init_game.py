@@ -9,6 +9,7 @@ Description:    An intepreter that gets certain kinds of files as
 
 from classes import *
 import sys
+import csv
 import signal
 import os.path
 import textwrap
@@ -28,6 +29,7 @@ class New_Game:
         self.hop_size = 0
         self.chapter_files = []
         self.no_chapters = 1
+        self.report = []
 
         # Extra inits
         signal.signal(signal.SIGINT, self.signal_handler)
@@ -311,6 +313,7 @@ class New_Game:
         for line in card.text:
             whole += line + " "
 
+        card.text = whole
         arr = textwrap.wrap(whole)
 
         for line in arr:
@@ -364,6 +367,16 @@ class New_Game:
                 print("You've reached the end of the game.")
                 print("You've seen {} out of {} cards in this chapter.".format(
                     self.seen, len(self.cards)))
+
+                # write output file
+                with open('user_choices.csv', mode='w') as csv_file:
+                    fieldnames = ["question", "card_text", "reply"]
+                    writer = csv.DictWriter(csv_file, fieldnames=fieldnames)
+                    writer.writeheader()
+
+                    for row in self.report:
+                        writer.writerow(row)
+
                 sys.exit()
             else:
                 print("One of the changes was not formatted correctly.")
@@ -405,6 +418,7 @@ class New_Game:
                 self.print_card(card)
                 if card.no_options > 0:
                     user=self.ask_input(card.no_options) - 1
+                    self.report.append({"question" : self.i, "card_text": card.text, "reply" : user + 1})
                     self.change_vars(card.changes[user])
                 else:
                     self.check_commands()
@@ -420,5 +434,6 @@ class New_Game:
                 self.hop=True
 
             self.seen += 1
+
 
 new_game=New_Game()

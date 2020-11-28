@@ -1,0 +1,36 @@
+Is Green the killer?
+Randomly set value for guilt
++ iskiller
+Is Green suspected to be the killer?
+Does the player suspect Green to be the killer?
++ issuspect
+& green
+Is Mustard the killer?
+Randomly set value for guilt
++ iskiller
+Is Mustard suspected to be the killer?
+Does the player suspect this character to be the killer?
++ issuspect
+& mustard
+Is Scarlet the killer?
+Randomly set value for guilt
++ iskiller
+Is Scarlet suspected to be the killer?
+Does the player suspect this character to be the killer?
++ issuspect
+& scarlet
+Murder weapon
+How was Black killed?
++ murderweapon
+Suspected weapon
+What is Black suspected to have been killed with?
++ suspectedweapon
+& weapon
+Murder location
+Where was Black killed?
++ murderlocation
+Suspected location
+Where is Black suspected to have been killed?
++ suspectedlocation
+& location
+

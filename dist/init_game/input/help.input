@@ -1,0 +1,100 @@
+There are three kinds of input files. Here we describe the format 
+and different symbols used in each of one. 
+
+NOTE: Every symbol must be at the start of a new line, with one whitespace behind it.
+
+CHARACTER.INPUT
+---------------
+Per character you start with the following attributes, each on a 
+new line:
+Name, Surname, Gender, Home, Current_Location, Sexual_Orientation
+
+A character is 'closed' with a '& character_keyword' on a new line. The 
+keyword can later be used in the goal.input file and to construct
+conditions in the card file.
+NOTE: The '& character_keyword' is the last line of the character.
+
+GOALS.INPUT
+-----------
+Per goal you start with the following attributes, each on a new
+line:
+Title, Description
+
+A goal is 'closed' with a '+ goal_keyword' on a new line. When all
+goals for a character have been specified you 'close' the list 
+of goals with '& character_keyword'. The goal_keyword can later be
+used in to construct conditions in the card file.
+NOTE: The '& character_keyword' is the last line of a character's
+goal list. 
+
+CARDS.INPUT
+-----------
+There are three kinds of cards: cards with and without options, 
+and switches. A card file has no particular beginning (just the
+start of the first card), but every card is ended with a &. 
+
+A simple text card therefore looks like:
+
+text
+-dialogue_text
+&
+
+The - signals dialogue. Dialogue ALWAYS comes after text.
+
+___OPTIONS
+An option is signaled with a '* option_text'. The lines under that
+option start specify the changes that have to be made if the user
+selects that option. 
+
+It would look something like this:
+
+* option_1_text
+# obj attribute new_value
+* option_2_text
+! obj goal_keyword points_added
+
+The # signals an attribute, the ! a goal.
+
+__SWITCHES
+A switch, as opposed to a normal card, has both a start indicatior
+and an end indicator, respectively '+' and '++'.
+
+The format is as follows:
+
++
+# obj attribute check_value i1 i2
+! obj goal_keyword check_value i1 i2
+++ default_index
+
+In case of a #, the game checks whether the attribute equals the
+check_value, and if true adds i1 to the card index. i2 is the jump
+the index has to make after going to that choice, to get back in 
+the normal flow.
+
+The evaulation of ! is different in that it DOESN'T check whether
+the points of the specified goal equal the check_value, but instead
+checks whether the points equal or are bigger than the check_value.
+
+
+LIST OF SYMBOLS
+---------------
+Character:
+&   end of character
+
+Goal:
++   end of goal
+&   end of character goal_list
+
+Card:
+[   title (every line in a title card needs to start with '[ '
++   beginning of switch
+++  end of switch
+&   end of card
+%   comment
+*   begin of option
+    ONLY under options:
+        #   statement regarding an attribute
+        !   statement regarding a goal
+        ju  jump the amount specified 
+        xXx end chapter 
+        XXX end game 
