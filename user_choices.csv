@@ -1,29 +1,32 @@
-question,card_text,reply
-
-4,"Senemis is an old man, with a bitter expression on his face. He receives you in the hall of his house. ",1
-
-8,That sounds suspiciously like a member of the cult you thought you destroyed. ,0
-
-10,,1
-
-12,You take the first ship to Samos and arrive there a day later. Samos is currently being held by Athenians. Do you try to blend it or do you dress as a Spartan? ,0
-
-20,"When you finally arrive at the temple, dressed as an Athenian, you find Cleinias standing in the courtyard. Cleinias laughs when he sees you. ",1
-
-21,,0
-
-23,,0
-
-25,You take your leave and find yourself having to find some food and get a place to sleep. What do you do first? ,0
-
-29,You get some food at a street vendor and take a stroll across the streets of the city of Samos. You notice a big presence of the athenian army. ,1
-
-34,"He was a brilliant general and rhetorican, overflowing with ideas and plots to reach his not-always-very-moral goals. He was a beautiful youth pining after Socrates and sleeping around with everyone around him in the meantime. You didn't see eye to eye on everything, but you grew very close as friends.. ",1
-
-35,"But much has happened since then. Alkybiades had apparently spend some time in Sparta, which was weird to say the least, and what was he doing on Samos trying to talk to Athenians? What has he done to have people wanting to kill him? ",0
-
-36,"You have to get him to talk to you, but he's walking across the public agora surrounded by guards. What do you do? ",0
-
-37,"The guards look up and slowly move to the bushes. Alkybiades has seen you and must have recognized you, but he doesn't do anything to stop the guards. And so you take them out one by one, trying not to gather too much attention. When you're done you turn to your old friend. ",1
-
-38,You've fulfilled your task and go back to Sparta to collect your reward. ,0
+question,card_text,reply
+2,"The aliens have arrived on earth! You are a scientist at the European Space Agency (ESA) in Katwijk, and your team has been assigned to the welcoming committee. Only problem is: humans cannot enter the space ship’s toxic environment. ",1
+3,You need your team to start building. Why are they not helping you? Go find out what is happening! ,2
+9,Dr. Meeq does not want to send a robot. ,1
+10,"You are afraid Dr. Meeq will risk his life. He seems to believe in the MEDIA EQUATION, the theory that the more human something looks the more trustworthy it is. What do you say to make him join your efforts? ",2
+12,Dr. Meeq sights. ,1
+13,Who do you talk to next? ,2
+14,Dr. Antros refuses to join. ,1
+15,It seems like Dr. Antros has attributed human features to the robot. We call this ANTHROPOMORPHISM. What do you say to make him feel better? ,2
+16,Dr. Antros shakes his head. ,1
+18,Who do you talk to next? ,2
+9,D r .   M e e q   d o e s   n o t   w a n t   t o   s e n d   a   r o b o t .   ,1
+10,"Y o u   a r e   a f r a i d   D r .   M e e q   w i l l   r i s k   h i s   l i f e .   H e   s e e m s   t o   b e l i e v e   i n   t h e   M E D I A   E Q U A T I O N ,   t h e   t h e o r y   t h a t   t h e   m o r e   h u m a n   s o m e t h i n g   l o o k s   t h e   m o r e   t r u s t w o r t h y   i t   i s .   W h a t   d o   y o u   s a y   t o   m a k e   h i m   j o i n   y o u r   e f f o r t s ?   ",2
+12,D r .   M e e q   s i g h t s .   ,1
+13,W h o   d o   y o u   t a l k   t o   n e x t ?   ,2
+14,D r .   A n t r o s   r e f u s e s   t o   j o i n .   ,1
+15,I t   s e e m s   l i k e   D r .   A n t r o s   h a s   a t t r i b u t e d   h u m a n   f e a t u r e s   t o   t h e   r o b o t .   W e   c a l l   t h i s   A N T H R O P O M O R P H I S M .   W h a t   d o   y o u   s a y   t o   m a k e   h i m   f e e l   b e t t e r ?   ,3
+17,Dr. Antros frowns. ,1
+18,W h o   d o   y o u   t a l k   t o   n e x t ?   ,1
+4,Dr. Unval says she does not trust the aliens. ,1
+5,It seems like Dr. Unval thinks the aliens fall into the UNCANNY VALLEY. They look so human that they scare her. What do you say to make her feel better? ,3
+6,Dr. Unval nods. ,1
+8,Who do you talk to next? ,1
+9,D   r   .       M   e   e   q       d   o   e   s       n   o   t       w   a   n   t       t   o       s   e   n   d       a       r   o   b   o   t   .       ,1
+10,"Y   o   u       a   r   e       a   f   r   a   i   d       D   r   .       M   e   e   q       w   i   l   l       r   i   s   k       h   i   s       l   i   f   e   .       H   e       s   e   e   m   s       t   o       b   e   l   i   e   v   e       i   n       t   h   e       M   E   D   I   A       E   Q   U   A   T   I   O   N   ,       t   h   e       t   h   e   o   r   y       t   h   a   t       t   h   e       m   o   r   e       h   u   m   a   n       s   o   m   e   t   h   i   n   g       l   o   o   k   s       t   h   e       m   o   r   e       t   r   u   s   t   w   o   r   t   h   y       i   t       i   s   .       W   h   a   t       d   o       y   o   u       s   a   y       t   o       m   a   k   e       h   i   m       j   o   i   n       y   o   u   r       e   f   f   o   r   t   s   ?       ",3
+11,Dr. Meeq gets angry. ,1
+13,W   h   o       d   o       y   o   u       t   a   l   k       t   o       n   e   x   t   ?       ,3
+22,What do you think should be done in regards to the media equation? ,1
+25,Your team mates ask you whether anthropomorphism is a good or a bad thing. What do you reply? ,1
+28,What do you think should be done in regards to the uncanny valley? ,2
+29,"The result looks quite… unsettling, but there is no time to fix it. ",1
+33,It seems the aliens were so insulted by your creation they decided to attack earth! ,1

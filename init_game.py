@@ -59,11 +59,12 @@ class New_Game:
         files.
         """
         files = []
+        inpt = ['empt', 'saveworld/characters.input', 'saveworld/goals.input', 'saveworld/tasks.input']
         f_line = False # first line
 
-        if len(sys.argv) != 4:
-            if len(sys.argv) == 2:
-                if sys.argv[1] == 'help':
+        if len(inpt) != 4:
+            if len(inpt) == 2:
+                if inpt[1] == 'help':
                     file = open('input/help.input')
                     for line in file:
                         print(sanitize(line))
@@ -74,8 +75,8 @@ class New_Game:
                         for line in file:
                             print(sanitize(line))
                     sys.exit()
-                elif os.path.isfile(sys.argv[1]):
-                    gamefile = open(sys.argv[1])
+                elif os.path.isfile(inpt[1]):
+                    gamefile = open(inpt[1])
                     f_line = True
                     for f in gamefile:
                         fi = sanitize(f)
@@ -84,7 +85,7 @@ class New_Game:
                             f_line = False
                         else:
                             files.append(fi)
-            elif len(sys.argv) == 1: 
+            elif len(inpt) == 1: 
                 print(
                     "This game requires 3 files as arguments OR a file containing these three:")
                 print("-A character file")
@@ -102,9 +103,9 @@ class New_Game:
                     else:
                         files.append(fi)
         else:
-            files.append(sys.argv[1])
-            files.append(sys.argv[2])
-            files.append(sys.argv[3])
+            files.append(inpt[1])
+            files.append(inpt[2])
+            files.append(inpt[3])
 
         for file in files:
             if not os.path.isfile(file):
@@ -184,13 +185,13 @@ class New_Game:
         """
         Initializes all cards from the card file.
         """
-        file = open(file_name)
         cur = Card()
         switch = False
         cur_switch = Switch()
         o = -1
         count = 0
-        for line in file:
+        f = open(file_name, encoding="utf8")
+        for line in f:
             cur_line = line.split(' ')
             action = sanitize(cur_line[0])
             if action == '&':
@@ -313,7 +314,6 @@ class New_Game:
         for line in card.text:
             whole += line + " "
 
-        card.text = whole
         arr = textwrap.wrap(whole)
 
         for line in arr:
@@ -348,7 +348,7 @@ class New_Game:
                 # ! you spartan 10
                 obj = self.characters[c[1]]
                 goal = c[2]
-                obj.goals[goal].points = c[3]
+                obj.goals[goal].points += int(c[3])
             elif first_c == '#':
                 # # you name Kassandra
                 obj = self.characters[c[1]]
@@ -432,6 +432,9 @@ class New_Game:
                 modifier, self.hop_size=self.get_switched_index(card)
                 self.i += modifier
                 self.hop=True
+
+            if self.i < 0:
+                self.i = 1
 
             self.seen += 1
 
