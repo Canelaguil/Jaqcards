@@ -1,0 +1,180 @@
+In this game you have two goals: to build a robot, and to convince your three team members to help. Your success depends on how well you understand the reasons why they don’t want to join. There are more than on good possibilities for every choice. Enjoy!
+&
+[ SAVING EARTH
+[ Version 1
+&
+The aliens have arrived on earth! You are a scientist at the European Space Agency (ESA) in Katwijk, and your team has been assigned to the welcoming committee. Only problem is: humans cannot enter the space ship’s toxic environment.
+* The first contact will have to be through a robot!
+&
+You need your team to start building. Why are they not helping you? Go find out what is happening!
+* Talk to Dr. Unval
+* Talk to Dr. Meeq
+ju 6
+* Talk to Dr. Antros
+ju 11
+&
+% Dr. Unval
+Dr. Unval says she does not trust the aliens. 
+- Dr. Unval: “They look too human. But they are not, that is very obvious. It scares me, and I don’t trust them.”
+* “Oh no!” 
+! you everyone 10
+&
+It seems like Dr. Unval thinks the aliens fall into the UNCANNY VALLEY. They look so human that they scare her. What do you say to make her feel better?
+* “How you feel about their looks is entirely subjective. You are a scientist! Don’t base your fears on uneasy feelings.“ 
+! you everyone 10
+ju 2
+* “You were afraid of people in video games when you first started playing. Maybe you just have to get used to how they look.“ 
+! you everyone 10
+ju 2
+* “Well, they are not human, so that makes sense. “ 
+! you everyone 0
+&
+Dr. Unval nods. 
+- Dr. Unval: “Yes, this whole situation can only end badly. I am going to hide away in my bunker with my family.” 
+* You did not manage to convince Dr. Unval!
+ju 2
+&
+Dr. Unval smiles. 
+- Dr. Unval: “Yes, you are right. I got lost in the uncanny valley. Thank you, I’ll be right there!” 
+* You succesfully convinced Dr. Unval!
+&
+Who do you talk to next? 
+* Talk to Dr. Meeq
+* Talk to Dr. Antros
+ju 6
+* I have talked to everyone, let’s build that robot!
+ju 12
+&
+% Dr. Meeq 
+Dr. Meeq does not want to send a robot.
+- Dr. Meeq: “They look just like us!” he says. “If we go as ourselves, they will trust us right away because we all look so similar. That’s the only way they will trust us.” 
+* “Oh no!” 
+! you everyone 10
+&
+You are afraid Dr. Meeq will risk his life. He seems to believe in the MEDIA EQUATION, the theory that the more human something looks the more trustworthy it is. What do you say to make him join your efforts?
+* “They may look like us, but they are an entirely alien species with unknown motivations. Do not risk your life!“ 
+! you everyone 10
+ju 2
+* “How you feel about their looks is entirely subjective. You are a scientist! Don’t base your fears on uneasy feelings. “ 
+! you everyone 10
+ju 2
+* “It would be stupid to risk your life for that!“ 
+! you everyone 0
+&
+Dr. Meeq gets angry. 
+- Dr. Meeq: “Stupid? Me? I’ll have you know the media equation has a solid base of empirical evidence. I do not want to work with someone who calls me stupid.
+* You did not convince Dr. Meeq!
+ju 2
+&
+Dr. Meeq sights.
+- Dr. Meeq: “Yes, I guess you are right. I’ll join you.” 
+* You got Dr. Meeq on board!
+&
+Who do you talk to next? 
+* Talk to Dr. Unval
+ju -9
+* Talk to Dr. Antros
+* I have talked to everyone, let’s build that robot!
+ju 7
+&
+% Dr. Antros
+Dr. Antros refuses to join.
+- Dr. Antros: “I am not risking the life of that robot. Have you seen his cute eyes? Have you seen his sad mouth? He does not want to go!” 
+* “Oh no!” 
+! you everyone 10
+&
+It seems like Dr. Antros has attributed human features to the robot. We call this ANTHROPOMORPHISM. What do you say to make him feel better? 
+* “The robot is only humanlike if we make it so. Every human feature it has was created.“ 
+! you everyone 10
+ju 2
+*  “That robot? Doesn’t look human to me. “ 
+! you everyone 0
+*  “It may look humanlike, but it only works as a glorified telephone. This robot won’t even pass the Turing test. “ 
+! you everyone 10
+ju 2
+&
+Dr. Antros shakes his head. 
+- Dr. Antros: “I cannot work with someone with such a different view on things as I.”
+* You failed to convince Dr. Antros to join your project. 
+ju 2
+&
+Dr. Antros frowns. 
+- Dr. Antros: “Yes, I guess you are right. We need to do this.” 
+* You convinced Dr. Antros! Good job.
+&
+Who do you talk to next? 
+* Talk to Dr. Unval
+ju -14
+* Talk to Dr. MEEQ
+ju -9
+* I have talked to everyone, let’s build that robot!
+ju 2
+&
+% IEDEREEN GEHAD: 
+% Design robot
+&
+You call management to say you're ready to start the design process.
+&
++
+! you everyone 15 2 1
+++ 1
+Unfortunately you failed to assemble a team. ESA gives the assignment to someone else. 
+* Try again. 
+ju -1000
+&
+The team starts designing the robot! As its leader you have the final call on all matters concerning its appearance. 
+&
+% Media equation
+What do you think should be done in regards to the media equation? 
+* The more human/alien features the robot has, the better!
+ju 2
+! you success 10
+* The less human/alien features the robot has, the better!
+&
+You did not make the robot look very trustworthy, but there is no time to fix it.
+* Onto the next question!
+ju 2
+& 
+You made the robot look great! Onto the next matter.
+&
+% Anthropomorphism
+Your team mates ask you whether anthropomorphism is a good or a bad thing. What do you reply? 
+* “Anthropomorphism is not good or bad, it’s just human nature to assign human features to objects.” 
+ju 2
+! you success 10
+* “Anthropomorphism is bad. Humnans are easily trick into thinking robots are humanlike."
+&
+It seems like your team is not entirely convinced. They loose some faith in the project.
+* Onto the next matter!
+ju 2
+& 
+The team nods and continues working. You did well.
+&
+% Uncanny valley
+What do you think should be done in regards to the uncanny valley? 
+* The uncanny valley should be avoided by making the robot’s human features less realistic.
+ju 2
+! you success 10
+* The robot should fall into the uncanny valley as much as possible, which can be achieved by making it more humanlike. 
+&
+You made the robot look quite… unsettling, but there is no time to fix it.
+* Looks like the robot is done!
+ju 2
+& 
+You did well. And it looks like the robot is done!
+&
++
+! you success 15 1 1
+++ 2
+% saved world
+You did it! Your robot was a huge success and the aliens were thankful for the warm welcome. The robot helps them figure out a way to properly visit, and they give the team an alien seed collection as a thank you gift. Neat!
+* Retire to the countryside. 
+XXX
+&
+% not saved world
+It seems the aliens were so insulted by your creation they decided to attack earth!
+* Die gracefully in the attack
+XXX
+* Go back in time
+ju -1000
+&
