@@ -59,7 +59,7 @@ class New_Game:
         files.
         """
         files = []
-        inpt = ['empt', 'saveworld/characters.input', 'saveworld/goals.input', 'saveworld/tasks.input']
+        inpt = ['empt', 'characters.input', 'goals.input', 'tasks.input']
         f_line = False # first line
 
         if len(inpt) != 4:
