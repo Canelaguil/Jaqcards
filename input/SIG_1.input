@@ -9,7 +9,7 @@ Welcome to Sparta. You've just come home from a few years travelling through Per
 Your family welcomes you, and you're just preparing for a nice and cosy holiday at home when a messenger appears, telling you the great Senemis is looking for a misthios. That isn't someone you can say no to, so you reluctantly go to his house.
 &
 Senemis is an old man, with a bitter expression on his face. He receives you in the hall of his house.
-- Senemis: Ah, there you are. You are the misthios they call Eagle Bearer, wasn't it? What is your name?
+- Senemis: Ah, there you are. You are the misthios they call Eagle Bearer, isn't it? What is your name?
 * Alexios
 # you name Alexios
 # you gender 2
@@ -30,7 +30,7 @@ Senemis is an old man, with a bitter expression on his face. He receives you in 
 &
 - Senemis: Well, Kassandra, I have a job for you. A very high profile job. Do you think you're up for it?
 - You: High profile... in which circles?
-- Senemis: In Greek circles, though he called himself Spartan once. Before he betrayed us all. And now he's trying to win back Athen's favor! He's a snake in the grass, a man who brings war and dispute everywhere he goes, a man who sweettalks everyone into being at his bidding.
+- Senemis: In Greek circles, though he called himself Spartan once. Before he betrayed us all. And now he's trying to win back Athens' favor! He's a snake in the grass, a man who brings war and dispute everywhere he goes, a man who sweettalks everyone into doing what he wants.
 &
 That sounds suspiciously like a member of the cult you thought you destroyed.
 - Senemis: Do you think you're up for it?
@@ -151,7 +151,7 @@ You get some food at a street vendor and take a stroll across the streets of the
 * Continue walking
 ju 2
 &
-A man on the street tells you the whole of the athenian army is now based on Samos. The capital is having trouble, and the army has about become independent from it. You ask for more information, but the man doesn't know more.
+A man on the street tells you the whole of the athenian army is now based on Samos. The capital is having trouble, and the army is currently independent. You ask for more information, but the man doesn't know more.
 &
 When you finally set out to find an inn it's late, and most of them are full. After a tiring search you get permission to stay in someone's stables for the night, but this does not exactly guarantee a good night's sleep. The next morning you set out to the agora in a bad mood.
 &
@@ -219,10 +219,10 @@ Alkybiades smiles, not frightened at all.
 &
 - Alkybiades: Yes. You're a misthios who's fought on a lot of sides of this war. I haven't seen you in ages. Either you're here to kill me, in which case I had to take my chance with those guards, or you weren't.
 - You: In which case I just murdered a lot of people.
-- Alkybiades: Yes. And I'd been looking for a way to get rid of them, so thanks.
+- Alkybiades: Yes. And I had been looking for a way to get rid of them, so thanks.
 - You: Why?
 &
-- Alkybiades: They'd been paid to betray me. And I knew they couldn't possibly have hurt you, so really! It was the safest choice. And I'm glad you're alive! This must suuuurely mean you had no intention of hurting me.
+- Alkybiades: They were paid to betray me. And I knew they couldn't possibly have hurt you, so really! It was the safest choice. And I'm glad you're alive! This must suuuurely mean you had no intention of hurting me.
 * Don't say anything.
 ju 3
 * - You: Actually...
@@ -272,9 +272,9 @@ Alkybiades gestures you to sit down. You find a quiet spot off the busy ways of 
 ! alky saved -10
 * - You: ...Okay.
 &
-- Alkybiades: I'm just telling you so you don't decide to kill me everytime something bad happens.
+- Alkybiades: I'm just telling you so you don't decide to kill me everytime you hear something that sounds bad.
 - You: I promise to hear you out till the end.
-- Alkybiades: Good. So, have you heard of the Sicilian expedition?
+- Alkybiades: Good. So, what do you know about the Sicilian expedition?
 * It rings a bell...
 * Yeah no I think I was somewhere in Asia at the time.
 
@@ -282,7 +282,7 @@ Alkybiades gestures you to sit down. You find a quiet spot off the busy ways of 
 &
 Alkybiades start his story describing his genius in very humble brags on the various cities he conquered for Athens. You sort of knew already, but he truly is brilliant both as general and diplomat. Everything was going well till he set out on that ambitious Sicilian expedition.
 &
-- Alkybiades: Let's say I was popular enough to get the people to vote for the expedition, but not enough for it to work. Days before we'd leave my enemies vandalized religious statues, and then people came forward with charges of blasphemy... Basically everything surrounding me was seen as cursed and a bad omen, my reputation was ruined. I should never have left.
+- Alkybiades: Let's say I was popular enough to get the people to vote for the expedition, but not enough for it to work. Days before we left my enemies vandalized religious statues, and then people came forward with charges of blasphemy... Basically everything surrounding me was seen as cursed and a bad omen. My reputation was ruined. I should never have left.
 * - You: But you did.
 &
 - Alkybiades: I had to. The expedition was my idea, I couldn't just pass on it. But while away my enemies took charge. The expedition wasn't going well, and then suddenly news reached me that I had been sentenced to death back in Athens. So naturally I fled.
@@ -302,7 +302,7 @@ ju 2
 &
 Alkybiades chuckles.
 - Alkybiades: In any case, that's how I ended up in Sparta.
-* - You: I don't consider that transition as logical as you seem to do.
+* - You: That is not as obvious a step as you make it sound.
 ! alky saved -10
 * - You: That was clever... I suppose.
 ! alky saved 20
@@ -317,7 +317,7 @@ Alkybiades chuckles.
 - You: So... Why did Sparta kick you out?
 - Alkybiades: It might have involved a woman.
 * - You: Of course it did.
-* - You: Are you fucking serious? How stupid can you be?
+* - You: Are you fucking serious?
 ! alky saved -20
 &
 - Alkybiades: Spartan women have a lot more freedom than Athenian do. You know that.
@@ -332,8 +332,8 @@ Alkybiades chuckles.
 * - You: I thought you were smarter than that.
 &
 - Alkybiades: I didn't get caught, exactly, it's just that she insisted on calling our son Alkybiades in private and people started to catch on.
-- You: I can't believe you.
-- Alkybiades: Yeah, I can't believe myself either sometimes.
+- You: You're unbelievable.
+- Alkybiades: Yeah, I can't stand myself either sometimes.
 &
 - Alkybiades: Anyways, word reached me that they had sentenced me to die, so I defected to Persia.
 * You: Of course.
@@ -370,7 +370,7 @@ ju -3
 &
 - Alkybiades: No. I was under the protection of a satrap who I adviced. He was high up in the hierarchy.
 - You: And he listened.
-- Alkybiades. Yes, of course. We were... 'close'.
+- Alkybiades: Yes, of course. We were... 'close'.
 * - You: I think I know what kind of 'close' you mean.
 * - You: Can't say I'm surprised.
 &
@@ -379,7 +379,7 @@ Alkybiades chuckles.
 * - You: That was a long time ago.
 * - You: Not that kind of close though.
 ! alky lovers -20
-* - You: Those were the good times.
+* - You: Good times.
 ! alky lovers 20
 &
 - You: So what kind of advice did you give him?
@@ -396,7 +396,7 @@ Alkybiades chuckles.
 - You: So do.
 - Alkybiades: Where to start... Have you heard of the coup of the 400?
 - You: They're ruling Athens now, right?
-* - You: Finally Athens has gotten some sense into it. It has listened to the whims of the people for too long, better to have a Spartan model.
+* - You: It was about time Athens adopted the Spartan oligarchic model. 
 ! you spartan 60
 * - You: Shame.
 ! you athenian 10
@@ -405,14 +405,14 @@ Alkybiades chuckles.
 &
 - Alkybiades: Yes... So anyways, what it comes down to is this: I was in talks with Athens for me to come back, then the coup happened, democracy was thrown away, and the army based on Samos declared independence.
 - You: Wait, what?
-- Alkybiades: Yeah, most of the army was here on Samos during the coup. They decided to stay democratic.
+- Alkybiades: Yeah, most of the army was here on Samos during the coup. They decided to keep going as a democracy.
 &
 - You: Which still doesn't explain what you are doing here.
 - Alkybiades: Well, they're willing to hear me out. So I'm here preparing for my big speech on Friday.
 - You: Big speech on what?
 - Alkybiades: Big speech explaining everything I just told you in such a way, that they'll think I was a democractic Athenian all along.
 &
-- You: You say the army is independent of Athens now?
+- You: You say the Athenian army... is now independent from Athens?
 - Alkybiades: The army IS Athens now. Those tyrants aren't gonna be in power very long.
 - You: And what is your... end game?
 &
